@@ -110,7 +110,6 @@ The following steps outline the end-to-end process used in this project:
 - **Scikit-learn** – Model training and evaluation
 - **Statsmodels** – Statistical modeling (OLS regression, VIF)
 - **SciPy** – Statistical tests and probability distributions
-- **Pylab** – Numerical plotting and analysis
 - **Warnings** – For suppressing non-critical output
 
 <a id="how-to-run"></a>
