@@ -47,23 +47,22 @@ Thus, there is a critical need for an **accurate, scalable, and low-maintenance 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
 
-xxxxxxxxxx
-1. **Data Overview**  
-   The Boston Housing dataset was loaded into a pandas DataFrame for preliminary inspection. Key characteristics such as data dimensions, data types, presence of duplicates or null values, and the number of unique values per feature were assessed.
+1. **Initial Data Treatment**
+   - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
+   - Clarified **action items for EDA** based on initial observations.
    
-3. **Exploratory Data Analysis (EDA)**  
-   - **Univariate analysis** was conducted to understand the distribution of each feature using histograms and descriptive statistics.  
-   - **Bivariate analysis** explored relationships between independent variables and the target (`MEDV`) using scatter plots and correlation heatmaps, helping to identify potential multicollinearity and feature relevance.
+3. **Exploratory Data Analysis (EDA)**
+   - **Univariate Analysis**: Examined the distribution of numerical and categorical variables using histograms and descriptive statistics.
+   - **Bivariate Analysis**: Explored relationships between independent variables and the target (`Price`) using scatter plots and correlation heatmaps to identify potential multicollinearity and feature relevance.
+   - **Feature Engineering**: Transformed vague or inconsistent variables into more meaningful, usable forms for modeling (e.g., extracting car brand, creating `car_age`).
+   - Continued **data treatment**:
+     - Dropped purely cardinal or irrelevant variables.
+     - Imputed missing values using median, mean, or model-based methods to ensure a clean dataset for modeling.
 
-4. **Model Building – Linear Regression**  
-   - Split the dataset into training and testing sets (typically 80/20).  
-   - Examined multicollinearity using correlation matrices and VIF; dropped highly collinear features.  
-   - Built an initial linear regression model and evaluated coefficient significance.  
-   - Removed statistically insignificant variables to improve model interpretability and re-fit the model.  
-   - Verified linear regression assumptions (linearity, normality, homoscedasticity, independence).  
-   - Evaluated model performance using **Root Mean Squared Error (RMSE)**, **Mean Absolute Error (MAE)**, and **Mean Absolute Percentage Error (MAPE)**.  
-   - Applied **k-fold cross-validation** to assess model generalizability.  
-   - Constructed the final linear regression model based on refined features and evaluation metrics.
+4. **Model Building**
+   - Perform linear regression, ridge regression, decision tree, random forest, and KNN regression separately.
+   - Tune the hyper parameters for each model to enhance its performance.
+   - Compare R² Score and RMSE of each model and select the best method.
 
 ## 📈 Results
 
