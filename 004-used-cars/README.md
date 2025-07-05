@@ -37,14 +37,17 @@ Detailed feature descriptions are listed in the table below:
 | **New_Price** | Price of a new car of the same model (in INR 100,000) |
 | **Price** | Price of the used car (in INR 100,000) (**Target Variable**) |
 
-📌 Note: The Boston Housing dataset has been deprecated in newer versions of scikit-learn due to ethical concerns about the LSTAT variable. It is used here solely for educational purposes.
-
 ## ❓ Problem Statement
-Accurately estimating housing prices is a persistent challenge due to the numerous and often interrelated factors that influence real estate markets — particularly the issue of multicollinearity among predictors. This project aims to develop a linear regression model to predict housing prices in Boston using key features from the dataset. The objective is to minimize prediction error while identifying the most influential variables, offering a foundational, interpretable baseline for housing price modeling and further machine learning applications.
+Automobiles are essential in modern society, enabling daily commutes, logistics, and long-distance travel. As the population grows and urbanization accelerates, the demand for personal vehicles can no longer be met solely by the new car market. Used cars, offering practical value at lower costs, have become a popular choice for many buyers.
+
+However, pricing used cars is challenging. Even well-maintained cars depreciate over time due to factors such as mileage, brand, model, year, and market demand. Determining the right price for each used car typically requires thorough inspection and market analysis, which is time-consuming and costly. Inaccurate pricing risks eroding customer trust and impacting sales.
+
+Thus, there is a critical need for an **accurate, scalable, and low-maintenance pricing mechanism** to support fair pricing in the used car market, benefiting both sellers and buyers.
 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
 
+xxxxxxxxxx
 1. **Data Overview**  
    The Boston Housing dataset was loaded into a pandas DataFrame for preliminary inspection. Key characteristics such as data dimensions, data types, presence of duplicates or null values, and the number of unique values per feature were assessed.
    
