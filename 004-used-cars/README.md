@@ -60,69 +60,46 @@ The following steps outline the end-to-end process used in this project:
      - Imputed missing values using median, mean, or model-based methods to ensure a clean dataset for modeling.
 
 4. **Model Building**
-   - Perform linear regression, ridge regression, decision tree, random forest, and KNN regression separately.
-   - Tune the hyper parameters for each model to enhance its performance.
-   - Compare R² Score and RMSE of each model and select the best method.
+   - Performed **Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression** separately to forecast used car prices.
+   - Tuned **hyperparameters** for each model to enhance predictive performance and reduce overfitting.
+   - Compared **R² Scores and RMSE** across all models to evaluate and select the best-performing method for price prediction.
 
 ## 📈 Results
 
-### 🔢 Model Performance Metrics
-The linear regression model was evaluated using standard regression metrics on the test set:
-| Metric                                    | Value             |
-|-------------------------------------------|-------------------|
-| R² Score (Coefficient of Determination)   | 0.729 (+/- 0.232) |
-| RMSE (Root Mean Squared Error)            | 0.198045          |
-| MAE (Mean Absolute Error)                 | 0.151284          |
-| MAPE (Mean Absolute Percentage Error)     | 5.257965          |
+### 💯 Model Performance Metrics
 
-These results indicate that the model explains approximately 73% of the variance in housing prices and achieves a mean absolute percentage error of approximately 5.26%.
+| Model               | Train R²  | Test R²  | Train RMSE | Test RMSE |
+|----------------------|-----------|----------|-------------|------------|
+| Linear Regression    | 0.9835    | 0.8197   | 1.4346      | 4.7319     |
+| Ridge                | 0.9666    | 0.9098   | 2.0432      | 3.3478     |
+| Decision Tree        | 0.9597    | 0.8489   | 2.2437      | 4.3319     |
+| Random Forest        | 0.9799    | 0.8726   | 1.5830      | 3.9787     |
+| KNN                  | 0.9999    | 0.8316   | 0.0203      | 4.5729     |
 
----
-
-### 📊 Model Coefficients
-Below are the learned coefficients for each feature in the model:
-| Feature   | Coefficient | Interpretation (qualitative impact)                   |
-|-----------|-------------|--------------------------------------------------------|
-| const     | 4.649       | Baseline value when all features are 0                |
-| CRIM      | -0.0125     | Higher crime rate slightly decreases housing price    |
-| CHAS      | +0.1198     | Proximity to Charles River slightly increases price   |
-| NOX       | -1.0562     | Higher air pollution (NOx) strongly decreases price   |
-| RM        | +0.0589     | More rooms per dwelling increases price               |
-| DIS       | -0.0441     | Greater distance from employment centers reduces value|
-| RAD       | +0.0078     | Higher accessibility to highways slightly increases price |
-| PTRATIO   | -0.0485     | Higher student–teacher ratio reduces price            |
-| LSTAT     | -0.0293     | Higher % of lower status population decreases price   |
-
-*Note: The magnitude and sign of coefficients indicate each feature’s relative impact.*
+**Ridge Regression achieves the highest Test R² (`0.910`) and the lowest Test RMSE (`3.35`)**, indicating **best generalization** and **predictive accuracy** on unseen data.
 
 ---
 
-### 🧪 Residual Analysis
-To assess the model assumptions and quality of fit, the following plots were analyzed:
-- ✅ **Residuals vs. Fitted Values** (for linearity & homoscedasticity)
-- ✅ **Histogram of Residuals** (for normality)
-- ✅ **QQ Plot** (for distribution shape)
-- ✅ **Actual vs. Predicted** plot (for overall fit)
+### 🔢 Model Coefficient
 
-![Residuals vs. Fitted Values](attachments/residual.png)
-![Histogram of Residuals](attachments/histogram.png)
-![QQ Plot](attachments/qq-plot.png)
-
-**Example code (matplotlib)**
-```python
-# Plot histogram of residuals.
-sns.histplot(residuals, kde=True)
-# Show the plot.
-plt.show()
-# Plot q-q plot of residuals
-stats.probplot(residuals, dist = "norm", plot = pylab)
-# Show the plot.
-plt.show()
-```
+| Parameter | Default | Description |
+|---|---|---|
+| **`alpha`** | `1.0` | Regularization strength; higher = more regularization, helping reduce overfitting. |
+| **`fit_intercept`** | `True` | Whether to calculate the intercept (`b0`). |
+| **`normalize`** | *deprecated* | Previously normalized features automatically; now use `StandardScaler` explicitly. |
+| **`solver`** | `'auto'` | Algorithm for optimization. Options include `'auto'`, `'svd'`, `'cholesky'`, `'lsqr'`, `'sparse_cg'`, `'sag'`, `'saga'`, `'lbfgs'`. |
+| **`max_iter`** | `None` | Maximum iterations for solvers that support it (`'sag'`, `'saga'`). |
+| **`tol`** | `1e-3` | Precision tolerance for convergence. |
+| **`random_state`** | `None` | Ensures reproducibility for stochastic solvers (`'sag'`, `'saga'`). |
+| **`copy_X`** | `True` | Whether to copy `X` or overwrite it. |
+| **`positive`** | `False` | Forces coefficients to remain positive if set to `True`. |
 
 ## 💡 Insights & Recommendations
-- Actionable insights have been derived for each key variable influencing housing prices.
-- Based on the model results, we provide the following actionable insights for various stakeholders, including urban planners, policymakers, real estate developers, homeowners, and investors.
+
+- Builds **trust** with fair, data-backed pricing.  
+- **Saves time** by reducing manual pricing work.  
+- **Boosts profits** with data-aligned buying and selling.  
+- Enables **targeted marketing** using high-value features.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
