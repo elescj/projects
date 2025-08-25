@@ -20,7 +20,7 @@ The dataset, sourced from the MIT Applied Data Science Program, is provided in C
 
 #######################################################################################
 
-Each record includes **13 input features** describing property and neighborhood characteristics, and one **target variable**: the median value of owner-occupied homes (in $1000s).
+Each record includes **13 input features** describing lead profile, and one **target variable**: the status of whether the lead was converted to a paid customer or not.
 
 Detailed feature descriptions are listed in the table below:
 | Column | Description |
