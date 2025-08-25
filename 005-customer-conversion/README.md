@@ -56,12 +56,12 @@ The following steps outline the end-to-end process used in this project:
       - Comparing numerical variable distributions across target classes with histograms and boxplots.
       - Assessing conversion rates of categorical variables with stacked bar plots.
 
-#######################################################################################
+4. **Modelling**
+   - Trained **Decision Tree** and **Random Forest** models separately to forecast customer conversion.
+   - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
+   - Evaluated model performance using relevant metrics and visualized the tuned results.
 
-4. **Model Building**
-   - Performed **Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression** separately to forecast used car prices.
-   - Tuned **hyperparameters** for each model to enhance predictive performance and reduce overfitting.
-   - Compared **R² Scores and RMSE** across all models to evaluate and select the best-performing method for price prediction.
+#######################################################################################
 
 ## 📈 Results
 
