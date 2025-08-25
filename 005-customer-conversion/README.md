@@ -40,13 +40,9 @@ Detailed feature descriptions are listed in the table below:
 | **status**            | Conversion status — whether the lead was converted to a paid customer (**Target Variable**) |
 
 ## ❓ Problem Statement
-High customer conversion—essentially finding the right leads and approaching them in the right way—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; instead, the goal is to personalize the approach and focus on customers who actually need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it helps forecast which customers are most likely to convert and how to engage unlikely customers through tailored strategies.
+High customer conversion—essentially finding the right leads and approaching them in the right way—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; instead, the goal is to personalize the approach and focus on customers who actually need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it helps forecast which customers are most likely to convert and how to engage unlikely customers through tailored strategies. The key to successful interpretation lies in understanding the importance of each lead profile attribute (feature) across a large collection of leads. The real challenge, however, is determining which model performs best.
 
 #######################################################################################
-
-However, pricing used cars is challenging. Even well-maintained cars depreciate over time due to factors such as mileage, brand, model, year, and market demand. Determining the right price for each used car typically requires thorough inspection and market analysis, which is time-consuming and costly. Inaccurate pricing risks eroding customer trust and impacting sales.
-
-Thus, there is a critical need for an **accurate, scalable, and low-maintenance pricing mechanism** to support fair pricing in the used car market, benefiting both sellers and buyers.
 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
