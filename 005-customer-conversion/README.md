@@ -11,10 +11,10 @@ This project applies Decision Tree and Random Forest models to forecast lead-to-
 - [Technologies Used](#technologies-used)
 - [How to Run](#how-to-run)
 
-#######################################################################################
-
 ## 🧠 Overview
-This project implements a supervised machine learning pipeline to predict used car prices in India, leveraging multiple regression methods to model the relationship between price and features such as car name, location, and manufacturing year. The pipeline includes data cleaning, feature engineering, model training, evaluation, and insights extraction to support pricing decisions in the used car market.
+This project implements a supervised machine learning pipeline to predict customer conversion for ExtraaLearn, an early-stage startup. Using Decision Trees and Random Forests, the model captures relationships between customer status and features such as lead age, occupation, and initial interaction platform. The pipeline covers data cleaning, feature engineering, model training, evaluation, and insight extraction, supporting sales prediction, lead analysis, and customer profiling.
+
+#######################################################################################
 
 ## 📊 Dataset
 This dataset, originally provided in the Applied Data Science Program by MIT, is a CSV file with 7,253 rows and 14 columns, where each row represents a used car sold in India, including details such as car model, location, year of manufacture, mileage, engine capacity, and selling price.
