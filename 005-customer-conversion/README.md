@@ -40,12 +40,12 @@ Detailed feature descriptions are listed in the table below:
 | **status**            | Conversion status — whether the lead was converted to a paid customer (**Target Variable**) |
 
 ## ❓ Problem Statement
-High customer conversion—essentially finding the right leads and approaching them in the right way—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; instead, the goal is to personalize the approach and focus on customers who actually need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it helps forecast which customers are most likely to convert and how to engage unlikely customers through tailored strategies. The key to successful interpretation lies in understanding the importance of each lead profile attribute (feature) across a large collection of leads. The real challenge, however, is determining which model performs best.
-
-#######################################################################################
+High customer conversion—essentially identifying the right leads and approaching them effectively—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; the real goal is to personalize the approach and focus on customers who truly need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it enables forecasting which customers are most likely to convert and how to engage less likely customers through tailored strategies. The key to successful interpretation lies in understanding the importance of each lead profile attribute (feature) across a large dataset. The true challenge, however, is determining which model delivers the best performance.
 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
+
+#######################################################################################
 
 1. **Initial Data Treatment**
    - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
