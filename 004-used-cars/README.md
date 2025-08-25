@@ -17,7 +17,7 @@ This project implements a supervised machine learning pipeline to predict used c
 ## 📊 Dataset
 This dataset, originally provided in the Applied Data Science Program by MIT, is a CSV file with 7,253 rows and 14 columns, where each row represents a used car sold in India, including details such as car model, location, year of manufacture, mileage, engine capacity, and selling price.
 
-Each record includes **13 input features** describing property and neighborhood characteristics, and one **target variable**: the median value of owner-occupied homes (in $1000s).
+Each record includes **15 input features** describing vehicle information, and one **target variable**: price of the used car (in INR 100,000).
 
 Detailed feature descriptions are listed in the table below:
 | Column | Description |
