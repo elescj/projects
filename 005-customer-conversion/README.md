@@ -39,11 +39,10 @@ Detailed feature descriptions are listed in the table below:
 | **referral**          | Flag indicating whether the lead heard about ExtraaLearn through a referral |
 | **status**            | Conversion status — whether the lead was converted to a paid customer (**Target Variable**) |
 
-#######################################################################################
-
 ## ❓ Problem Statement
-Automobiles are essential in modern society, enabling daily commutes, logistics, and long-distance travel. As the population grows and urbanization accelerates, the demand for personal vehicles can no longer be met solely by the new car market. Used cars, offering practical value at lower costs, have become a popular choice for many buyers.
-A high customer conversion, which, essentially is to find the right leads is always desired by any company
+High customer conversion—essentially finding the right leads and approaching them in the right way—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; instead, the goal is to personalize the approach and focus on customers who actually need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it helps forecast which customers are most likely to convert and how to engage unlikely customers through tailored strategies.
+
+#######################################################################################
 
 However, pricing used cars is challenging. Even well-maintained cars depreciate over time due to factors such as mileage, brand, model, year, and market demand. Determining the right price for each used car typically requires thorough inspection and market analysis, which is time-consuming and costly. Inaccurate pricing risks eroding customer trust and impacting sales.
 
