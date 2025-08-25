@@ -1,6 +1,5 @@
 # 🔄 Branching Out: Customer Conversion Prediction with Decision Trees vs. Random Forests
-#######################################################################################
-This project applies Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression to forecast used car prices in India based on key parameters, providing actionable business recommendations using the best-performing regression model.
+This project applies Decision Tree and Random Forest models to forecast lead-to-sale conversions, generating actionable business recommendations from the best-performing approach.
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
@@ -11,6 +10,8 @@ This project applies Linear Regression, Ridge Regression, Decision Tree, Random 
 - [Insights & Recommendations](#-insights--recommendations)
 - [Technologies Used](#technologies-used)
 - [How to Run](#how-to-run)
+
+#######################################################################################
 
 ## 🧠 Overview
 This project implements a supervised machine learning pipeline to predict used car prices in India, leveraging multiple regression methods to model the relationship between price and features such as car name, location, and manufacturing year. The pipeline includes data cleaning, feature engineering, model training, evaluation, and insights extraction to support pricing decisions in the used car market.
