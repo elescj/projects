@@ -45,11 +45,11 @@ High customer conversion—essentially identifying the right leads and approachi
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
 
-#######################################################################################
-
 1. **Initial Data Treatment**
    - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
-   - Clarified **action items for EDA** based on initial observations.
+   - **Initial Data Treatment**: Prepare the dataset for EDA.
+
+#######################################################################################
    
 3. **Exploratory Data Analysis (EDA)**
    - **Univariate Analysis**: Examined the distribution of numerical and categorical variables using histograms and descriptive statistics.
