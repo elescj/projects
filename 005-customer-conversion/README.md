@@ -118,8 +118,8 @@ The following steps outline the end-to-end process used in this project:
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/003-boston-housing-lr.git
-cd 003-boston-housing-lr
+git clone https://github.com/elescj/005-customer-conversion-lr.git
+cd 005-customer-conversion-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
