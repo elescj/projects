@@ -18,9 +18,9 @@ This project implements a supervised machine learning pipeline to predict custom
 
 The dataset, sourced from the MIT Applied Data Science Program, is provided in CSV format with 4,612 rows and 15 columns. Each row corresponds to a lead profile and contains details such as age, occupation, first interaction platform with ExtraaLearn, profile completion percentage, number of website visits, total time spent on the website, average pages viewed per visit, last interaction with ExtraaLearn, and media information.
 
-#######################################################################################
+Each record consists of 13 input features describing the lead profile and 1 target variable indicating whether the lead converted to a paid customer.
 
-Each record includes **13 input features** describing lead profile, and one **target variable**: the status of whether the lead was converted to a paid customer or not.
+#######################################################################################
 
 Detailed feature descriptions are listed in the table below:
 | Column | Description |
