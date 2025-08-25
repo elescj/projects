@@ -20,25 +20,26 @@ The dataset, sourced from the MIT Applied Data Science Program, is provided in C
 
 Each record consists of 13 input features describing the lead profile and 1 target variable indicating whether the lead converted to a paid customer.
 
-#######################################################################################
-
 Detailed feature descriptions are listed in the table below:
-| Column | Description |
-|--------|-------------|
-| **S.No.** | Serial Number |
-| **Name** | Car name, including brand and model |
-| **Location** | City where the car is available |
-| **Year** | Manufacturing year |
-| **Kilometers_Driven** | Total kilometers driven by previous owner(s) |
-| **Fuel_Type** | Fuel type (Petrol, Diesel, Electric, CNG, LPG) |
-| **Transmission** | Transmission type (Automatic/Manual) |
-| **Owner_Type** | Type of ownership (First, Second, etc.) |
-| **Mileage** | Mileage in kmpl or km/kg |
-| **Engine** | Engine displacement in CC |
-| **Power** | Engine power in BHP |
-| **Seats** | Number of seats |
-| **New_Price** | Price of a new car of the same model (in INR 100,000) |
-| **Price** | Price of the used car (in INR 100,000) (**Target Variable**) |
+| Column                | Description |
+|------------------------|-------------|
+| **ID**                | Unique ID of the lead |
+| **age**               | Age of the lead |
+| **current_occupation** | Current occupation of the lead. Values include 'Professional', 'Unemployed', and 'Student' |
+| **first_interaction** | How the lead first interacted with ExtraaLearn. Values include 'Website', 'Mobile App' |
+| **profile_completed** | Percentage of profile completed on the website/mobile app. Categories: Low (0–50%), Medium (50–75%), High (75–100%) |
+| **website_visits**    | Number of times the lead visited the website |
+| **time_spent_on_website** | Total time spent on the website |
+| **page_views_per_visit** | Average number of pages viewed per website visit |
+| **last_activity**     | Last recorded interaction between the lead and ExtraaLearn. Examples: Email Activity (requested program details, received brochure, etc.), Phone Activity (phone/SMS conversation with representative), Website Activity (live chat, profile update, etc.) |
+| **print_media_type1** | Flag indicating whether the lead saw ExtraaLearn’s advertisement in a newspaper |
+| **print_media_type2** | Flag indicating whether the lead saw ExtraaLearn’s advertisement in a magazine |
+| **digital_media**     | Flag indicating whether the lead saw ExtraaLearn’s advertisement on digital platforms |
+| **educational_channels** | Flag indicating whether the lead heard about ExtraaLearn through educational channels (online forums, discussion threads, educational websites, etc.) |
+| **referral**          | Flag indicating whether the lead heard about ExtraaLearn through a referral |
+| **status**            | Conversion status — whether the lead was converted to a paid customer (**Target Variable**) |
+
+#######################################################################################
 
 ## ❓ Problem Statement
 Automobiles are essential in modern society, enabling daily commutes, logistics, and long-distance travel. As the population grows and urbanization accelerates, the demand for personal vehicles can no longer be met solely by the new car market. Used cars, offering practical value at lower costs, have become a popular choice for many buyers.
