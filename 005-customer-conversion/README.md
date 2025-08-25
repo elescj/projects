@@ -43,7 +43,7 @@ Detailed feature descriptions are listed in the table below:
 
 ## ❓ Problem Statement
 Automobiles are essential in modern society, enabling daily commutes, logistics, and long-distance travel. As the population grows and urbanization accelerates, the demand for personal vehicles can no longer be met solely by the new car market. Used cars, offering practical value at lower costs, have become a popular choice for many buyers.
-Successful lead profiling
+A high customer conversion, which, essentially is to find the right leads is always desired by any company
 
 However, pricing used cars is challenging. Even well-maintained cars depreciate over time due to factors such as mileage, brand, model, year, and market demand. Determining the right price for each used car typically requires thorough inspection and market analysis, which is time-consuming and costly. Inaccurate pricing risks eroding customer trust and impacting sales.
 
