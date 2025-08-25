@@ -14,10 +14,11 @@ This project applies Decision Tree and Random Forest models to forecast lead-to-
 ## 🧠 Overview
 This project implements a supervised machine learning pipeline to predict customer conversion for ExtraaLearn, an early-stage startup. Using Decision Trees and Random Forests, the model captures relationships between customer status and features such as lead age, occupation, and initial interaction platform. The pipeline covers data cleaning, feature engineering, model training, evaluation, and insight extraction, supporting sales prediction, lead analysis, and customer profiling.
 
-#######################################################################################
-
 ## 📊 Dataset
-This dataset, originally provided in the Applied Data Science Program by MIT, is a CSV file with 7,253 rows and 14 columns, where each row represents a used car sold in India, including details such as car model, location, year of manufacture, mileage, engine capacity, and selling price.
+
+The dataset, sourced from the MIT Applied Data Science Program, is provided in CSV format with 4,612 rows and 15 columns. Each row corresponds to a lead profile and contains details such as age, occupation, first interaction platform with ExtraaLearn, profile completion percentage, number of website visits, total time spent on the website, average pages viewed per visit, last interaction with ExtraaLearn, and media information.
+
+#######################################################################################
 
 Each record includes **13 input features** describing property and neighborhood characteristics, and one **target variable**: the median value of owner-occupied homes (in $1000s).
 
