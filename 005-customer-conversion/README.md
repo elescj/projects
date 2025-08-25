@@ -46,18 +46,17 @@ High customer conversion—essentially identifying the right leads and approachi
 The following steps outline the end-to-end process used in this project:
 
 1. **Initial Data Treatment**
-   - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
-   - **Initial Data Treatment**: Prepare the dataset for EDA.
+   - **Data Overview**: Examined the dataset to understand variable types, identify duplicates, and assess missing values.
+   - **Initial Data Treatment**: Cleaned and structured the dataset to ensure readiness for exploratory data analysis (EDA).
+
+3. **Exploratory Data Analysis (EDA)**
+   - **Univariate Analysis**: Analyzed the distribution of numerical and categorical variables using histograms and descriptive statistics.
+   - **Bivariate Analysis**: Investigated relationships between independent variables and the target by:
+      - Using correlation heatmaps for numerical variables.
+      - Comparing numerical variable distributions across target classes with histograms and boxplots.
+      - Assessing conversion rates of categorical variables with stacked bar plots.
 
 #######################################################################################
-   
-3. **Exploratory Data Analysis (EDA)**
-   - **Univariate Analysis**: Examined the distribution of numerical and categorical variables using histograms and descriptive statistics.
-   - **Bivariate Analysis**: Explored relationships between independent variables and the target (`Price`) using scatter plots and correlation heatmaps to identify potential multicollinearity and feature relevance.
-   - **Feature Engineering**: Transformed vague or inconsistent variables into more meaningful, usable forms for modeling (e.g., extracting car brand, creating `car_age`).
-   - Continued **data treatment**:
-     - Dropped purely cardinal or irrelevant variables.
-     - Imputed missing values using median, mean, or model-based methods to ensure a clean dataset for modeling.
 
 4. **Model Building**
    - Performed **Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression** separately to forecast used car prices.
