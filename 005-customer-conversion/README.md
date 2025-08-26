@@ -113,8 +113,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 | Decision Tree   | 0.80     | 0.62          | 0.86       | 0.72   |
 | Random Forest   | 0.83     | 0.68          | 0.85       | 0.76   |
 
-#######################################################################################
-
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
