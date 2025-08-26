@@ -70,8 +70,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 - **F1-Score (1)**: Balance between precision and recall.  
 - **Accuracy**: Overall correct predictions (can be misleading if classes are imbalanced).  
 
----
-
 ### 🌲 Decision Tree – Training Data
 | Class                        | Precision | Recall | F1-Score | Support |
 |------------------------------|-----------|--------|----------|---------|
@@ -80,8 +78,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 | **Accuracy**                 |           |        | **0.80** | 3228    |
 | **Macro Avg**                | 0.78      | 0.83   | 0.79     | 3228    |
 | **Weighted Avg**             | 0.84      | 0.80   | 0.81     | 3228    |
-
----
 
 ### 🌲 Decision Tree – Test Data
 | Class                        | Precision | Recall | F1-Score | Support |
@@ -92,8 +88,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 | **Macro Avg**                | 0.77      | 0.82   | 0.78     | 1384    |
 | **Weighted Avg**             | 0.83      | 0.80   | 0.80     | 1384    |
 
----
-
 ### 🏕️ Random Forest – Training Data
 | Class                        | Precision | Recall | F1-Score | Support |
 |------------------------------|-----------|--------|----------|---------|
@@ -102,8 +96,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 | **Accuracy**                 |           |        | **0.84** | 3228    |
 | **Macro Avg**                | 0.81      | 0.85   | 0.82     | 3228    |
 | **Weighted Avg**             | 0.86      | 0.84   | 0.84     | 3228    |
-
----
 
 ### 🏕️ Random Forest – Test Data
 | Class                        | Precision | Recall | F1-Score | Support |
@@ -114,16 +106,12 @@ The models were evaluated on both **training** and **test** datasets using stand
 | **Macro Avg**                | 0.81      | 0.84   | 0.82     | 1384    |
 | **Weighted Avg**             | 0.85      | 0.83   | 0.84     | 1384    |
 
----
-
 ### 📌 Model Performance Summary (Test Data)
 
 | Model           | Accuracy | Precision (1) | Recall (1) | F1 (1) |
 |-----------------|----------|---------------|------------|--------|
 | Decision Tree   | 0.80     | 0.62          | 0.86       | 0.72   |
 | Random Forest   | 0.83     | 0.68          | 0.85       | 0.76   |
-
----
 
 #######################################################################################
 
