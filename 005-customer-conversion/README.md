@@ -1,8 +1,8 @@
 # 🔄 Branching Out: Customer Conversion Prediction with Decision Trees vs. Random Forests
-![Graphical Summary](attachments/customer-conversion.png)
 This project applies Decision Tree and Random Forest models to forecast lead-to-sale conversions, generating actionable business recommendations from the best-performing approach.
 
 ## 📂 Table of Contents
+![Graphical Summary](attachments/customer-conversion.png)
 - [Overview](#-overview)
 - [Dataset](#-dataset)
 - [Problem Statement](#-problem-statement)
