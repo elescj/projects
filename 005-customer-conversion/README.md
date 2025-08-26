@@ -83,40 +83,40 @@ The models were evaluated on both **training** and **test** datasets using stand
 
 ---
 
-#######################################################################################
-
 ### 🌲 Decision Tree – Test Data
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| 0     | ...       | ...    | ...      | ...     |
-| 1     | ...       | ...    | ...      | ...     |
-| **Accuracy**     |         |          | **...** | ... |
-| **Macro Avg**    | ...     | ...      | ...     | ... |
-| **Weighted Avg** | ...     | ...      | ...     | ... |
+| Class                        | Precision | Recall | F1-Score | Support |
+|------------------------------|-----------|--------|----------|---------|
+| 0 (converted to sale)        | 0.93      | 0.77   | 0.84     | 962     |
+| 1 (not converted to sale)    | 0.62      | 0.86   | 0.72     | 422     |
+| **Accuracy**                 |           |        | **0.80** | 1384    |
+| **Macro Avg**                | 0.77      | 0.82   | 0.78     | 1384    |
+| **Weighted Avg**             | 0.83      | 0.80   | 0.80     | 1384    |
 
 ---
 
 ### 🏕️ Random Forest – Training Data
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| 0     | ...       | ...    | ...      | ...     |
-| 1     | ...       | ...    | ...      | ...     |
-| **Accuracy**     |         |          | **...** | ... |
-| **Macro Avg**    | ...     | ...      | ...     | ... |
-| **Weighted Avg** | ...     | ...      | ...     | ... |
+| Class                        | Precision | Recall | F1-Score | Support |
+|------------------------------|-----------|--------|----------|---------|
+| 0 (converted to sale)        | 0.94      | 0.83   | 0.88     | 2273    |
+| 1 (not converted to sale)    | 0.68      | 0.87   | 0.76     | 955     |
+| **Accuracy**                 |           |        | **0.84** | 3228    |
+| **Macro Avg**                | 0.81      | 0.85   | 0.82     | 3228    |
+| **Weighted Avg**             | 0.86      | 0.84   | 0.84     | 3228    |
 
 ---
 
 ### 🏕️ Random Forest – Test Data
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| 0     | ...       | ...    | ...      | ...     |
-| 1     | ...       | ...    | ...      | ...     |
-| **Accuracy**     |         |          | **...** | ... |
-| **Macro Avg**    | ...     | ...      | ...     | ... |
-| **Weighted Avg** | ...     | ...      | ...     | ... |
+| Class                        | Precision | Recall | F1-Score | Support |
+|------------------------------|-----------|--------|----------|---------|
+| 0 (converted to sale)        | 0.93      | 0.83   | 0.87     | 962     |
+| 1 (not converted to sale)    | 0.68      | 0.85   | 0.76     | 422     |
+| **Accuracy**                 |           |        | **0.83** | 1384    |
+| **Macro Avg**                | 0.81      | 0.84   | 0.82     | 1384    |
+| **Weighted Avg**             | 0.85      | 0.83   | 0.84     | 1384    |
 
 ---
+
+#######################################################################################
 
 ### 📌 Model Performance Summary (Test Data)
 
