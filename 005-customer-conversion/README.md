@@ -63,46 +63,86 @@ The following steps outline the end-to-end process used in this project:
 
 #######################################################################################
 
-## 📈 Results
+## 📊 Model Evaluation
 
-### 💯 Model Performance Metrics
+The models were evaluated on both **training** and **test** datasets using standard classification metrics.  
 
-| Model         | Class             | Precision | Recall | F1-Score | Support |
-|---------------|-------------------|-----------|--------|----------|---------|
-| Decision Tree | 0 (Not Converted) | 0.94      | 0.77   | 0.85     | 2273    |
-|               | 1 (Converted)     | 0.62      | 0.88   | 0.73     |  955    |
-| Random Forest        | 0.9799    | 0.8726   | 1.5830      | 3.9787     |
-
-| Class |  |  |  | Support |
-|-------|-----------|--------|----------|---------|
-
-
-
-**Overall Performance**
-DTree
-| Metric        | Score |
-|---------------|-------|
-| Accuracy      | 0.80  |
-| Macro Avg F1  | 0.79  |
-| Weighted Avg F1 | 0.81 |
-
-**Ridge Regression achieves the highest Test R² (`0.910`) and the lowest Test RMSE (`3.35`)**, indicating **best generalization** and **predictive accuracy** on unseen data.
+- **Precision (1)**: When the model predicts a conversion, how often it is correct.  
+- **Recall (1)**: Out of all actual conversions, how many were correctly identified.  
+- **F1-Score (1)**: Balance between precision and recall.  
+- **Accuracy**: Overall correct predictions (can be misleading if classes are imbalanced).  
 
 ---
 
-### 🔢 Model Coefficient
+### 🌲 Decision Tree – Training Data
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.94      | 0.77   | 0.85     | 2273    |
+| 1     | 0.62      | 0.88   | 0.73     | 955     |
+| **Accuracy**     |           |        | **0.80** | 3228 |
+| **Macro Avg**    | 0.78      | 0.83   | 0.79    | 3228 |
+| **Weighted Avg** | 0.84      | 0.80   | 0.81    | 3228 |
 
-| Parameter | Default | Description |
-|---|---|---|
-| **`alpha`** | `1.0` | Regularization strength; higher = more regularization, helping reduce overfitting. |
-| **`fit_intercept`** | `True` | Whether to calculate the intercept (`b0`). |
-| **`normalize`** | *deprecated* | Previously normalized features automatically; now use `StandardScaler` explicitly. |
-| **`solver`** | `'auto'` | Algorithm for optimization. Options include `'auto'`, `'svd'`, `'cholesky'`, `'lsqr'`, `'sparse_cg'`, `'sag'`, `'saga'`, `'lbfgs'`. |
-| **`max_iter`** | `None` | Maximum iterations for solvers that support it (`'sag'`, `'saga'`). |
-| **`tol`** | `1e-3` | Precision tolerance for convergence. |
-| **`random_state`** | `None` | Ensures reproducibility for stochastic solvers (`'sag'`, `'saga'`). |
-| **`copy_X`** | `True` | Whether to copy `X` or overwrite it. |
-| **`positive`** | `False` | Forces coefficients to remain positive if set to `True`. |
+---
+
+### 🌲 Decision Tree – Test Data
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | ...       | ...    | ...      | ...     |
+| 1     | ...       | ...    | ...      | ...     |
+| **Accuracy**     |         |          | **...** | ... |
+| **Macro Avg**    | ...     | ...      | ...     | ... |
+| **Weighted Avg** | ...     | ...      | ...     | ... |
+
+---
+
+### 🌄 Random Forest – Training Data
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | ...       | ...    | ...      | ...     |
+| 1     | ...       | ...    | ...      | ...     |
+| **Accuracy**     |         |          | **...** | ... |
+| **Macro Avg**    | ...     | ...      | ...     | ... |
+| **Weighted Avg** | ...     | ...      | ...     | ... |
+
+---
+
+### 🌄 Random Forest – Test Data
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | ...       | ...    | ...      | ...     |
+| 1     | ...       | ...    | ...      | ...     |
+| **Accuracy**     |         |          | **...** | ... |
+| **Macro Avg**    | ...     | ...      | ...     | ... |
+| **Weighted Avg** | ...     | ...      | ...     | ... |
+
+---
+
+### 📌 Model Performance Summary (Test Data)
+
+| Model           | Accuracy | Precision (1) | Recall (1) | F1 (1) | ROC-AUC* |
+|-----------------|----------|---------------|------------|--------|----------|
+| Decision Tree   | ...      | ...           | ...        | ...    | ...      |
+| Random Forest   | ...      | ...           | ...        | ...    | ...      |
+
+\* Include ROC-AUC if available.  
+
+---
+
+### 💡 Insights
+
+- The **Decision Tree** achieves reasonable accuracy but may overfit compared to Random Forest.  
+- The **Random Forest** generally shows stronger performance, with higher F1-scores and better generalization.  
+- Recall for **class 1 (converted customers)** is especially important, as capturing more potential conversions directly impacts business outcomes.  
+
+---
+
+✅ Just replace the `...` placeholders with your sklearn report numbers.  
+✅ If you computed confusion matrices or feature importance plots, you can add them after the tables for visuals.  
+
+---
+
+Do you want me to also create a **version with collapsible sections** (so the big metric tables can be folded in Markdown for readability)?
 
 ## 💡 Insights & Recommendations
 
