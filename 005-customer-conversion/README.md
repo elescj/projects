@@ -130,8 +130,6 @@ The models were evaluated on both **training** and **test** datasets using stand
 - **Regularly retrain the model** with new lead data to maintain performance over time, especially as customer behavior evolves.  
 - **Use model insights for personalized sales strategies**, focusing efforts on leads with high predicted conversion probabilities and tailoring engagement based on lead profile attributes.
 
----
-
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
