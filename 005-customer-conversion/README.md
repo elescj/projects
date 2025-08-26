@@ -67,10 +67,24 @@ The following steps outline the end-to-end process used in this project:
 
 ### 💯 Model Performance Metrics
 
-| Model               | Train R²  | Test R²  | Train RMSE | Test RMSE |
-|----------------------|-----------|----------|-------------|------------|
-| Decision Tree        | 0.9597    | 0.8489   | 2.2437      | 4.3319     |
+| Model         | Class             | Precision | Recall | F1-Score | Support |
+|---------------|-------------------|-----------|--------|----------|---------|
+| Decision Tree | 0 (Not Converted) | 0.94      | 0.77   | 0.85     | 2273    |
+|               | 1 (Converted)     | 0.62      | 0.88   | 0.73     |  955    |
 | Random Forest        | 0.9799    | 0.8726   | 1.5830      | 3.9787     |
+
+| Class |  |  |  | Support |
+|-------|-----------|--------|----------|---------|
+
+
+
+**Overall Performance**
+DTree
+| Metric        | Score |
+|---------------|-------|
+| Accuracy      | 0.80  |
+| Macro Avg F1  | 0.79  |
+| Weighted Avg F1 | 0.81 |
 
 **Ridge Regression achieves the highest Test R² (`0.910`) and the lowest Test RMSE (`3.35`)**, indicating **best generalization** and **predictive accuracy** on unseen data.
 
