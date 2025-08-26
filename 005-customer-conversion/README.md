@@ -116,18 +116,16 @@ The models were evaluated on both **training** and **test** datasets using stand
 
 ---
 
-#######################################################################################
-
 ### 📌 Model Performance Summary (Test Data)
 
-| Model           | Accuracy | Precision (1) | Recall (1) | F1 (1) | ROC-AUC* |
-|-----------------|----------|---------------|------------|--------|----------|
-| Decision Tree   | ...      | ...           | ...        | ...    | ...      |
-| Random Forest   | ...      | ...           | ...        | ...    | ...      |
-
-\* Include ROC-AUC if available.  
+| Model           | Accuracy | Precision (1) | Recall (1) | F1 (1) |
+|-----------------|----------|---------------|------------|--------|
+| Decision Tree   | 0.80     | 0.62          | 0.86       | 0.72   |
+| Random Forest   | 0.83     | 0.68          | 0.85       | 0.76   |
 
 ---
+
+#######################################################################################
 
 ### 💡 Insights
 
