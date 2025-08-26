@@ -96,7 +96,7 @@ The models were evaluated on both **training** and **test** datasets using stand
 
 ---
 
-### 🌄 Random Forest – Training Data
+### 🏕️ Random Forest – Training Data
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
 | 0     | ...       | ...    | ...      | ...     |
@@ -107,7 +107,7 @@ The models were evaluated on both **training** and **test** datasets using stand
 
 ---
 
-### 🌄 Random Forest – Test Data
+### 🏕️ Random Forest – Test Data
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
 | 0     | ...       | ...    | ...      | ...     |
