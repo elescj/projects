@@ -61,7 +61,7 @@ The following steps outline the end-to-end process used in this project:
    - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
    - Evaluated model performance using relevant metrics and visualized the tuned results.
 
-## 📊 Model Evaluation
+## 📊 Results
 
 The models were evaluated on both **training** and **test** datasets using standard classification metrics.  
 
@@ -127,27 +127,15 @@ The models were evaluated on both **training** and **test** datasets using stand
 
 #######################################################################################
 
-### 💡 Insights
-
-- The **Decision Tree** achieves reasonable accuracy but may overfit compared to Random Forest.  
-- The **Random Forest** generally shows stronger performance, with higher F1-scores and better generalization.  
-- Recall for **class 1 (converted customers)** is especially important, as capturing more potential conversions directly impacts business outcomes.  
-
----
-
-✅ Just replace the `...` placeholders with your sklearn report numbers.  
-✅ If you computed confusion matrices or feature importance plots, you can add them after the tables for visuals.  
-
----
-
-Do you want me to also create a **version with collapsible sections** (so the big metric tables can be folded in Markdown for readability)?
-
 ## 💡 Insights & Recommendations
 
-- Builds **trust** with fair, data-backed pricing.  
-- **Saves time** by reducing manual pricing work.  
-- **Boosts profits** with data-aligned buying and selling.  
-- Enables **targeted marketing** using high-value features.
+- **Random Forest outperforms Decision Tree** across all metrics on the test set, confirming that the ensemble approach reduces overfitting and improves generalization.  
+- Both models achieve **strong recall for conversions (class 1)** — 0.86 (Decision Tree) and 0.85 (Random Forest). This means they capture most actual customers, which is valuable for minimizing missed opportunities.  
+- **Precision for conversions is lower** (0.62 DT, 0.68 RF), indicating that a non-trivial number of non-converting leads are still predicted as converters. This could result in sales effort being spent on weaker leads. 
+- **Accuracy** is higher for Random Forest (0.83 vs. 0.80), showing a better balance between identifying converters and non-converters.  
+- **Business takeaway**: If the goal is to **maximize conversion opportunities**, Random Forest is preferred, as it maintains high recall while offering better precision than Decision Tree.
+
+---
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
