@@ -69,11 +69,8 @@ The following steps outline the end-to-end process used in this project:
 
 | Model               | Train R²  | Test R²  | Train RMSE | Test RMSE |
 |----------------------|-----------|----------|-------------|------------|
-| Linear Regression    | 0.9835    | 0.8197   | 1.4346      | 4.7319     |
-| Ridge                | 0.9666    | 0.9098   | 2.0432      | 3.3478     |
 | Decision Tree        | 0.9597    | 0.8489   | 2.2437      | 4.3319     |
 | Random Forest        | 0.9799    | 0.8726   | 1.5830      | 3.9787     |
-| KNN                  | 0.9999    | 0.8316   | 0.0203      | 4.5729     |
 
 **Ridge Regression achieves the highest Test R² (`0.910`) and the lowest Test RMSE (`3.35`)**, indicating **best generalization** and **predictive accuracy** on unseen data.
 
