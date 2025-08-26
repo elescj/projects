@@ -1,5 +1,6 @@
 # 🔄 Branching Out: Customer Conversion Prediction with Decision Trees vs. Random Forests
 This project applies Decision Tree and Random Forest models to forecast lead-to-sale conversions, generating actionable business recommendations from the best-performing approach.
+![Graphical Summary](attachments/customer-conversion.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
@@ -10,7 +11,6 @@ This project applies Decision Tree and Random Forest models to forecast lead-to-
 - [Insights & Recommendations](#-insights--recommendations)
 - [Technologies Used](#technologies-used)
 - [How to Run](#how-to-run)
-![Graphical Summary](attachments/customer-conversion.png)
 
 ## 👓 Overview
 This project implements a supervised machine learning pipeline to predict customer conversion for ExtraaLearn, an early-stage startup. Using Decision Trees and Random Forests, the model captures relationships between customer status and features such as lead age, occupation, and initial interaction platform. The pipeline covers data cleaning, feature engineering, model training, evaluation, and insight extraction, supporting sales prediction, lead analysis, and customer profiling.
