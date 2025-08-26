@@ -61,8 +61,6 @@ The following steps outline the end-to-end process used in this project:
    - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
    - Evaluated model performance using relevant metrics and visualized the tuned results.
 
-#######################################################################################
-
 ## 📊 Model Evaluation
 
 The models were evaluated on both **training** and **test** datasets using standard classification metrics.  
@@ -75,15 +73,17 @@ The models were evaluated on both **training** and **test** datasets using stand
 ---
 
 ### 🌲 Decision Tree – Training Data
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| 0     | 0.94      | 0.77   | 0.85     | 2273    |
-| 1     | 0.62      | 0.88   | 0.73     | 955     |
-| **Accuracy**     |           |        | **0.80** | 3228 |
-| **Macro Avg**    | 0.78      | 0.83   | 0.79    | 3228 |
-| **Weighted Avg** | 0.84      | 0.80   | 0.81    | 3228 |
+| Class                        | Precision | Recall | F1-Score | Support |
+|------------------------------|-----------|--------|----------|---------|
+| 0 (converted to sale)        | 0.94      | 0.77   | 0.85     | 2273    |
+| 1 (not converted to sale)    | 0.62      | 0.88   | 0.73     | 955     |
+| **Accuracy**                 |           |        | **0.80** | 3228    |
+| **Macro Avg**                | 0.78      | 0.83   | 0.79     | 3228    |
+| **Weighted Avg**             | 0.84      | 0.80   | 0.81     | 3228    |
 
 ---
+
+#######################################################################################
 
 ### 🌲 Decision Tree – Test Data
 | Class | Precision | Recall | F1-Score | Support |
