@@ -1,4 +1,5 @@
 # 🎓 ElectraSyn Literature Mining Automation from Google Scholar
+![Graphical Summary](attachments/google-scholar.png)
 
 ## 🌁 Overview
 
