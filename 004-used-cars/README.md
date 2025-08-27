@@ -1,5 +1,6 @@
 # 🚗 Benchmarking Regression Models on Indian Used Car Price Prediction
 This project applies Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression to forecast used car prices in India based on key parameters, providing actionable business recommendations using the best-performing regression model.
+![Graphical Summary](attachments/used-cars.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
