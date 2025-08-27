@@ -1,6 +1,6 @@
-
 # 📈 Unsupervised Learning on Marketing Campaign Data: PCA, t-SNE, and K-Means Clustering
 This project applies t-SNE, dimensionality reduction (PCA), and clustering (K-means) to analyze customer profiles and perform segmentation.
+![Graphical Summary](attachments/marketing-campaign.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
