@@ -71,48 +71,20 @@ The models were evaluated on both **training** and **test** datasets using stand
 - **F1-Score (1)**: Balance between precision and recall.  
 - **Accuracy**: Overall correct predictions (can be misleading if classes are imbalanced).  
 
-### 🌲 Decision Tree – Training Data
-| Class                        | Precision | Recall | F1-Score | Support |
-|------------------------------|-----------|--------|----------|---------|
-| 0 (converted to sale)        | 0.94      | 0.77   | 0.85     | 2273    |
-| 1 (not converted to sale)    | 0.62      | 0.88   | 0.73     | 955     |
-| **Accuracy**                 |           |        | **0.80** | 3228    |
-| **Macro Avg**                | 0.78      | 0.83   | 0.79     | 3228    |
-| **Weighted Avg**             | 0.84      | 0.80   | 0.81     | 3228    |
-
-### 🌲 Decision Tree – Test Data
-| Class                        | Precision | Recall | F1-Score | Support |
-|------------------------------|-----------|--------|----------|---------|
-| 0 (converted to sale)        | 0.93      | 0.77   | 0.84     | 962     |
-| 1 (not converted to sale)    | 0.62      | 0.86   | 0.72     | 422     |
-| **Accuracy**                 |           |        | **0.80** | 1384    |
-| **Macro Avg**                | 0.77      | 0.82   | 0.78     | 1384    |
-| **Weighted Avg**             | 0.83      | 0.80   | 0.80     | 1384    |
-
-### 🏕️ Random Forest – Training Data
-| Class                        | Precision | Recall | F1-Score | Support |
-|------------------------------|-----------|--------|----------|---------|
-| 0 (converted to sale)        | 0.94      | 0.83   | 0.88     | 2273    |
-| 1 (not converted to sale)    | 0.68      | 0.87   | 0.76     | 955     |
-| **Accuracy**                 |           |        | **0.84** | 3228    |
-| **Macro Avg**                | 0.81      | 0.85   | 0.82     | 3228    |
-| **Weighted Avg**             | 0.86      | 0.84   | 0.84     | 3228    |
-
-### 🏕️ Random Forest – Test Data
-| Class                        | Precision | Recall | F1-Score | Support |
-|------------------------------|-----------|--------|----------|---------|
-| 0 (converted to sale)        | 0.93      | 0.83   | 0.87     | 962     |
-| 1 (not converted to sale)    | 0.68      | 0.85   | 0.76     | 422     |
-| **Accuracy**                 |           |        | **0.83** | 1384    |
-| **Macro Avg**                | 0.81      | 0.84   | 0.82     | 1384    |
-| **Weighted Avg**             | 0.85      | 0.83   | 0.84     | 1384    |
-
-### 📌 Model Performance Summary (Test Data)
-
-| Model           | Accuracy | Precision (1) | Recall (1) | F1 (1) |
-|-----------------|----------|---------------|------------|--------|
-| Decision Tree   | 0.80     | 0.62          | 0.86       | 0.72   |
-| Random Forest   | 0.83     | 0.68          | 0.85       | 0.76   |
+| Model                 | Dataset  | Class | Precision | Recall | F1-Score | Support | Accuracy | Macro Avg (F1) | Weighted Avg (F1) |
+| --------------------- | -------- | ----- | --------- | ------ | -------- | ------- | -------- | -------------- | ----------------- |
+| Logistic Regression   | Training | 0     | 0.85      | 0.96   | 0.90     | 3355    | 0.83     | 0.66           | 0.81              |
+| Logistic Regression   | Training | 1     | 0.66      | 0.30   | 0.42     | 817     |          |                |                   |
+| Logistic Regression   | Test     | 0     | 0.83      | 0.97   | 0.90     | 1416    | 0.82     | 0.64           | 0.79              |
+| Logistic Regression   | Test     | 1     | 0.69      | 0.27   | 0.39     | 372     |          |                |                   |
+| Decision Tree (tuned) | Training | 0     | 0.94      | 0.90   | 0.92     | 3355    | 0.87     | 0.81           | 0.88              |
+| Decision Tree (tuned) | Training | 1     | 0.65      | 0.76   | 0.70     | 817     |          |                |                   |
+| Decision Tree (tuned) | Test     | 0     | 0.93      | 0.90   | 0.91     | 1416    | 0.87     | 0.80           | 0.87              |
+| Decision Tree (tuned) | Test     | 1     | 0.66      | 0.73   | 0.69     | 372     |          |                |                   |
+| Random Forest (tuned) | Training | 0     | 0.94      | 0.89   | 0.92     | 3355    | 0.87     | 0.81           | 0.88              |
+| Random Forest (tuned) | Training | 1     | 0.63      | 0.77   | 0.70     | 817     |          |                |                   |
+| Random Forest (tuned) | Test     | 0     | 0.92      | 0.90   | 0.91     | 1416    | 0.86     | 0.80           | 0.86              |
+| Random Forest (tuned) | Test     | 1     | 0.65      | 0.72   | 0.68     | 372     |          |                |                   |
 
 ## 💡 Insights & Recommendations
 
