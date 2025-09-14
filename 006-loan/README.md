@@ -40,7 +40,7 @@ Detailed feature descriptions are listed in the table below:
 
 
 ## ❓ Problem Statement
-High customer conversion—essentially identifying the right leads and approaching them effectively—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; the real goal is to personalize the approach and focus on customers who truly need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it enables forecasting which customers are most likely to convert and how to engage less likely customers through tailored strategies. The key to successful interpretation lies in understanding the importance of each lead profile attribute (feature) across a large dataset. The true challenge, however, is determining which model delivers the best performance.
+Predicting loan defaults is important for helping lenders make smarter decisions and reduce financial risk. It’s a challenging problem because people’s financial situations and repayment behaviors are complex, influenced by factors like credit history, debt, employment, and the purpose of the loan. In this project, we use historical loan data to build a machine learning model that predicts whether an applicant will default or repay, providing practical insights to guide lending decisions.
 
 ## 💻 Methodology
 The following steps outline the end-to-end process used in this project:
@@ -55,9 +55,10 @@ The following steps outline the end-to-end process used in this project:
       - Using correlation heatmaps for numerical variables.
       - Comparing numerical variable distributions across target classes with histograms and boxplots.
       - Assessing conversion rates of categorical variables with stacked bar plots.
+   - **Data Treatment**: Imputed the missing value and treated outliers.
 
 4. **Modelling**
-   - Trained **Decision Tree** and **Random Forest** models separately to forecast customer conversion.
+   - Trained **Logistic Regression**, **Decision Tree**, and **Random Forest** models separately to forecast customer conversion.
    - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
    - Evaluated model performance using relevant metrics and visualized the tuned results.
 
