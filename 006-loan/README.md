@@ -89,18 +89,31 @@ The models were evaluated on both **training** and **test** datasets using stand
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
-- **Random Forest outperforms Decision Tree** across all metrics on the test set, confirming that the ensemble approach reduces overfitting and improves generalization.  
-- Both models achieve **strong recall for conversions (class 1)** — 0.86 (Decision Tree) and 0.85 (Random Forest). This means they capture most actual customers, which is valuable for minimizing missed opportunities.  
-- **Precision for conversions is lower** (0.62 DT, 0.68 RF), indicating that a non-trivial number of non-converting leads are still predicted as converters. This could result in sales effort being spent on weaker leads. 
-- **Accuracy** is higher for Random Forest (0.83 vs. 0.80), showing a better balance between identifying converters and non-converters.  
-- **Business takeaway**: If the goal is to **maximize conversion opportunities**, Random Forest is preferred, as it maintains high recall while offering better precision than Decision Tree.
+#### Best Performing Model
+- The **Tuned Decision Tree** and **Random Forest** showed the best trade-off between test accuracy and recall for defaulters.  
+- **Logistic Regression**, while simpler, underperformed in identifying defaults due to low recall for class 1.  
+
+#### Feature Insights
+- **Debt-to-income ratio (DEBTINC)** and its missing value flag were the most critical features, emphasizing financial stability as the key factor for defaults.  
+- **Age of credit history (CLAGE)** and **property value (VALUE)** also contributed significantly.  
+- Categorical features like **REASON** and **JOB** had minor effects after encoding.  
+
+#### Overfitting Considerations
+- Untuned **Decision Trees** and **Random Forests** overfit the training data completely (*F1-score = 1.0*), highlighting the importance of hyperparameter tuning.  
+- **Grid search tuning** improved test set generalization, balancing precision and recall.  
 
 ### ✅ Recommendations
-- **Deploy Random Forest as the primary model** for predicting customer conversions, as it provides higher accuracy, better precision, and strong recall compared to Decision Tree.  
-- **Prioritize leads flagged as high probability converters** by the model, while acknowledging that some false positives may occur.  
-- **Consider further feature engineering or additional data sources** to improve precision, reducing unnecessary sales effort on unlikely conversions.  
-- **Regularly retrain the model** with new lead data to maintain performance over time, especially as customer behavior evolves.  
-- **Use model insights for personalized sales strategies**, focusing efforts on leads with high predicted conversion probabilities and tailoring engagement based on lead profile attributes.
+#### Model Selection
+- Use **Tuned Decision Tree** or **Random Forest** for deployment to predict defaults, as they offer the best combination of recall for defaulters and overall accuracy.  
+
+#### Feature Monitoring
+- Monitor critical features like **DEBTINC** and **CLAGE** in real-time to ensure model stability.  
+- Regularly update **missing value flags** to reflect changes in data collection.  
+
+#### Future Work
+- Explore ensemble techniques like **Gradient Boosting** or **XGBoost** for potentially higher predictive power.  
+- Incorporate more **demographic and behavioral features** if available to improve recall for high-risk borrowers.  
+- Implement **cost-sensitive learning** or **resampling strategies** to address class imbalance and reduce false negatives for defaulters.  
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
@@ -117,8 +130,8 @@ The models were evaluated on both **training** and **test** datasets using stand
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/005-customer-conversion-lr.git
-cd 005-customer-conversion-lr
+git clone https://github.com/elescj/006-loan-lr.git
+cd 006-loan-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
@@ -130,4 +143,3 @@ pip install -r requirements.txt
 # Run the script
 python main.py
 ```
-
