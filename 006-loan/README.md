@@ -13,32 +13,31 @@ This project applies Logistic Regression, Decision Tree, and Random Forest model
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a supervised machine learning pipeline to predict customer conversion for ExtraaLearn, an early-stage startup. Using Decision Trees and Random Forests, the model captures relationships between customer status and features such as lead age, occupation, and initial interaction platform. The pipeline covers data cleaning, feature engineering, model training, evaluation, and insight extraction, supporting sales prediction, lead analysis, and customer profiling.
+This project implements a supervised machine learning pipeline to predict load default for a retail bank. Using Logistic Regression, Decision Trees, and Random Forests, the model captures relationships between loan default and features such as amount of loan approved, amount due on the existing mortgage, current value of the property, and so on. The pipeline covers data cleaning and treatment, model training, evaluation, and insight extraction, supporting loan default prediction.
 
 ## 📊 Dataset
 
-The dataset, sourced from the MIT Applied Data Science Program, is provided in CSV format with 4,612 rows and 15 columns. Each row corresponds to a lead profile and contains details such as age, occupation, first interaction platform with ExtraaLearn, profile completion percentage, number of website visits, total time spent on the website, average pages viewed per visit, last interaction with ExtraaLearn, and media information.
+The dataset, sourced from the MIT Applied Data Science Program, is provided in CSV format with 5,960 rows and 13 columns. Each row corresponds to an applicant profile and contains details such as amount of loan approved, amount due on the existing mortgage, current value of the property, and so on.
 
-Each record consists of 13 input features describing the lead profile and 1 target variable indicating whether the lead converted to a paid customer.
+Each record consists of 12 input features describing the applicant profile and 1 target variable indicating whether the client is defaulted on loan.
 
 Detailed feature descriptions are listed in the table below:
-| Column                | Description |
-|------------------------|-------------|
-| **ID**                | Unique ID of the lead |
-| **age**               | Age of the lead |
-| **current_occupation** | Current occupation of the lead. Values include 'Professional', 'Unemployed', and 'Student' |
-| **first_interaction** | How the lead first interacted with ExtraaLearn. Values include 'Website', 'Mobile App' |
-| **profile_completed** | Percentage of profile completed on the website/mobile app. Categories: Low (0–50%), Medium (50–75%), High (75–100%) |
-| **website_visits**    | Number of times the lead visited the website |
-| **time_spent_on_website** | Total time spent on the website |
-| **page_views_per_visit** | Average number of pages viewed per website visit |
-| **last_activity**     | Last recorded interaction between the lead and ExtraaLearn. Examples: Email Activity (requested program details, received brochure, etc.), Phone Activity (phone/SMS conversation with representative), Website Activity (live chat, profile update, etc.) |
-| **print_media_type1** | Flag indicating whether the lead saw ExtraaLearn’s advertisement in a newspaper |
-| **print_media_type2** | Flag indicating whether the lead saw ExtraaLearn’s advertisement in a magazine |
-| **digital_media**     | Flag indicating whether the lead saw ExtraaLearn’s advertisement on digital platforms |
-| **educational_channels** | Flag indicating whether the lead heard about ExtraaLearn through educational channels (online forums, discussion threads, educational websites, etc.) |
-| **referral**          | Flag indicating whether the lead heard about ExtraaLearn through a referral |
-| **status**            | Conversion status — whether the lead was converted to a paid customer (**Target Variable**) |
+| Column      | Description                                                                                                                                                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BAD**     | Loan status: 1 = Client defaulted on loan, 0 = Loan repaid                                                                                                                    |
+| **LOAN**    | Amount of loan approved                                                                                                                                                       |
+| **MORTDUE** | Amount due on the existing mortgage                                                                                                                                           |
+| **VALUE**   | Current value of the property                                                                                                                                                 |
+| **REASON**  | Reason for the loan request <br> - `HomeImp` = Home improvement <br> - `DebtCon` = Debt consolidation (taking out a new loan to pay off other liabilities and consumer debts) |
+| **JOB**     | Type of job the loan applicant has (e.g., manager, self-employed, etc.)                                                                                                       |
+| **YOJ**     | Years at present job                                                                                                                                                          |
+| **DEROG**   | Number of major derogatory reports (serious delinquency or late payments)                                                                                                     |
+| **DELINQ**  | Number of delinquent credit lines <br> A line of credit becomes delinquent when a borrower does not make the minimum required payments 30–60 days past due                    |
+| **CLAGE**   | Age of the oldest credit line in months                                                                                                                                       |
+| **NINQ**    | Number of recent credit inquiries                                                                                                                                             |
+| **CLNO**    | Number of existing credit lines                                                                                                                                               |
+| **DEBTINC** | Debt-to-income ratio (All monthly debt payments ÷ gross monthly income). This measures a borrower’s ability to manage monthly payments to repay the loan                      |
+
 
 ## ❓ Problem Statement
 High customer conversion—essentially identifying the right leads and approaching them effectively—is always a priority for any company. After all, no one wants to sell a fan to Eskimos; the real goal is to personalize the approach and focus on customers who truly need the product, such as residents in hot climates. Interpreting lead profiles is therefore a crucial business skill, as it enables forecasting which customers are most likely to convert and how to engage less likely customers through tailored strategies. The key to successful interpretation lies in understanding the importance of each lead profile attribute (feature) across a large dataset. The true challenge, however, is determining which model delivers the best performance.
