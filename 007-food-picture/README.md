@@ -108,20 +108,20 @@ Overall, the model demonstrates moderate capability in classifying food images, 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
-- **Pandas** – Data manipulation and analysis
 - **NumPy** – Numerical computations
-- **Matplotlib & Seaborn** – Data visualization
-- **Scikit-learn** – Model training and evaluation
-- **Statsmodels** – Statistical modeling (OLS regression, VIF)
-- **SciPy** – Statistical tests and probability distributions
+- **Pandas** – Data manipulation and analysis
+- **OpenCV** – Image processing and augmentation
+- **Matplotlib & Seaborn** – Data and performance visualization
+- **Scikit-learn** – Data preprocessing, model evaluation, and metrics
+- **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
 - **Warnings** – For suppressing non-critical output
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/006-loan-lr.git
-cd 006-loan-lr
+git clone https://github.com/elescj/007-food-picture-lr.git
+cd 007-food-image-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
