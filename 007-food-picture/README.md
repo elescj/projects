@@ -74,31 +74,36 @@ The models were evaluated on **test** datasets using standard classification met
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
-#### Best Performing Model
-- The **Tuned Decision Tree** and **Random Forest** showed the best trade-off between test accuracy and recall for defaulters.  
-- **Logistic Regression**, while simpler, underperformed in identifying defaults due to low recall for class 1.  
+In this project, we built a Convolutional Neural Network (CNN) to classify food images into three categories: **Bread**, **Soup**, and **Vegetable-Fruit**.  
 
-#### Feature Insights
-- **Debt-to-income ratio (DEBTINC)** and its missing value flag were the most critical features, emphasizing financial stability as the key factor for defaults.  
-- **Age of credit history (CLAGE)** and **property value (VALUE)** also contributed significantly.  
-- Categorical features like **REASON** and **JOB** had minor effects after encoding.  
+The model achieved an overall test accuracy of **66%**, with class-wise performance varying significantly:
 
-#### Overfitting Considerations
-- Untuned **Decision Trees** and **Random Forests** overfit the training data completely (*F1-score = 1.0*), highlighting the importance of hyperparameter tuning.  
-- **Grid search tuning** improved test set generalization, balancing precision and recall.  
+- **Vegetable-Fruit**: Strong performance (F1-score 0.82), correctly classified most images.  
+- **Soup**: Moderate performance (F1-score 0.72) with high recall (0.90), indicating most Soup images were correctly identified.  
+- **Bread**: Weak performance (F1-score 0.35), frequently misclassified as Soup, showing challenges in distinguishing visually similar categories.  
+
+Confusion matrix analysis confirmed that the model struggles most with **Bread vs. Soup** due to overlapping visual features or possible dataset imbalance.  
+
+Overall, the model demonstrates moderate capability in classifying food images, performing better on distinct classes (**Vegetable-Fruit**) than on similar ones (**Bread** and **Soup**).
 
 ### ✅ Recommendations
-#### Model Selection
-- Use **Tuned Decision Tree** or **Random Forest** for deployment to predict defaults, as they offer the best combination of recall for defaulters and overall accuracy.  
+1. **Increase Data Variety and Augmentation**  
+   - Add more Bread images or apply data augmentation (rotation, flipping, scaling) to reduce misclassification.
 
-#### Feature Monitoring
-- Monitor critical features like **DEBTINC** and **CLAGE** in real-time to ensure model stability.  
-- Regularly update **missing value flags** to reflect changes in data collection.  
+2. **Address Class Imbalance**  
+   - Use class weighting or oversampling techniques to give the model more emphasis on underrepresented classes.
 
-#### Future Work
-- Explore ensemble techniques like **Gradient Boosting** or **XGBoost** for potentially higher predictive power.  
-- Incorporate more **demographic and behavioral features** if available to improve recall for high-risk borrowers.  
-- Implement **cost-sensitive learning** or **resampling strategies** to address class imbalance and reduce false negatives for defaulters.  
+3. **Use Transfer Learning**  
+   - Pre-trained models like **VGG16**, **ResNet**, or **EfficientNet** could improve feature extraction, especially for visually similar classes.
+
+4. **Hyperparameter Tuning**  
+   - Experiment with different architectures, optimizers, learning rates, batch sizes, and dropout rates to improve generalization.
+
+5. **Additional Evaluation Metrics**  
+   - Consider precision-recall curves, ROC-AUC, or top-2 accuracy to better understand model performance on ambiguous cases.
+
+6. **Deployment Considerations**  
+   - For real-world use in a stock photography platform, implement a **human-in-the-loop verification** for low-confidence predictions to ensure labeling quality.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
