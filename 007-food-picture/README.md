@@ -1,5 +1,5 @@
 # 🍲 Food Image Classification Using CNN
-This project applies Logistic Regression, Decision Tree, and Random Forest models to forecast loan default, generating actionable business recommendations from the best-performing approach.
+This project applies Convolutional Neural Network (CNN) models to classify food images into their respective categories, with the objective of developing the most accurate and reliable CNN architecture for food recognition.
 ![Graphical Summary](attachments/food-picture.png)
 
 ## 📂 Table of Contents
