@@ -13,7 +13,13 @@ This project applies Convolutional Neural Network (CNN) models to classify food 
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a supervised machine learning pipeline to predict load default for a retail bank. Using Logistic Regression, Decision Trees, and Random Forests, the model captures relationships between loan default and features such as amount of loan approved, amount due on the existing mortgage, current value of the property, and so on. The pipeline covers data cleaning and treatment, model training, evaluation, and insight extraction, supporting loan default prediction.
+This project implements a **deep learning pipeline** for **classifying food images** into their respective categories. Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each food type, allowing it to accurately classify previously unseen (unlabeled) images.
+
+The pipeline includes:
+- **Data preprocessing and image handling**
+- **Design and implementation of two CNN architectures**
+- **Model training, evaluation, and performance comparison**
+- **Demonstration of the best-performing model on sample images**
 
 ## 📊 Dataset
 
