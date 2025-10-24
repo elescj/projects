@@ -23,18 +23,24 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset, sourced from the MIT Applied Data Science Program, is provided in zip format with a training and a test folders. Each folder contains three subfolders indicating the category of the food images. The food images are jpg. files.
+The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
 
-The original dataset exceeds the GitHub's upload limit. For access to the data, please contact me through my portfolio website.
-https://charles-jiao.netlify.app/contact
+- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
+- Each folder has **three subfolders**, each representing a **food category**.
+- All images are in **JPG format**.
+
+> **Note:** The original dataset exceeds GitHub's upload limit.  
+> To access the data, please contact me via my portfolio website:  
+> [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
+
 
 ## ❓ Problem Statement
-Predicting loan defaults is important for helping lenders make smarter decisions and reduce financial risk. It’s a challenging problem because people’s financial situations and repayment behaviors are complex, influenced by factors like credit history, debt, employment, and the purpose of the loan. In this project, we use historical loan data to build a machine learning model that predicts whether an applicant will default or repay, providing practical insights to guide lending decisions.
+Classifying food categories from images is important for applications such as automated dietary tracking, restaurant menu organization, and food recommendation systems. It’s a challenging problem because food images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use a labeled dataset of food images to build convolutional neural network (CNN) models that classify images into their respective food categories, providing practical insights into visual recognition of foods.
 
 ## 💻 Methodology
 The following steps outline the end-to-end process used in this project:
 
-1. **Initial Data Treatment**
+1. **Data (image) processing**
    - **Data Overview**: Examined the dataset to understand variable types, identify duplicates, and assess missing values.
    - **Initial Data Treatment**: Cleaned and structured the dataset to ensure readiness for exploratory data analysis (EDA).
 
