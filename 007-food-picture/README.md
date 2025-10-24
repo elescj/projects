@@ -23,27 +23,10 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset, sourced from the MIT Applied Data Science Program, is provided in CSV format with 5,960 rows and 13 columns. Each row corresponds to an applicant profile and contains details such as amount of loan approved, amount due on the existing mortgage, current value of the property, and so on.
+The dataset, sourced from the MIT Applied Data Science Program, is provided in zip format with a training and a test folders. Each folder contains three subfolders indicating the category of the food images. The food images are jpg. files.
 
-Each record consists of 12 input features describing the applicant profile and 1 target variable indicating whether the client is defaulted on loan.
-
-Detailed feature descriptions are listed in the table below:
-| Column      | Description                                                                                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **BAD**     | Loan status: 1 = Client defaulted on loan, 0 = Loan repaid                                                                                                                    |
-| **LOAN**    | Amount of loan approved                                                                                                                                                       |
-| **MORTDUE** | Amount due on the existing mortgage                                                                                                                                           |
-| **VALUE**   | Current value of the property                                                                                                                                                 |
-| **REASON**  | Reason for the loan request <br> - `HomeImp` = Home improvement <br> - `DebtCon` = Debt consolidation (taking out a new loan to pay off other liabilities and consumer debts) |
-| **JOB**     | Type of job the loan applicant has (e.g., manager, self-employed, etc.)                                                                                                       |
-| **YOJ**     | Years at present job                                                                                                                                                          |
-| **DEROG**   | Number of major derogatory reports (serious delinquency or late payments)                                                                                                     |
-| **DELINQ**  | Number of delinquent credit lines <br> A line of credit becomes delinquent when a borrower does not make the minimum required payments 30–60 days past due                    |
-| **CLAGE**   | Age of the oldest credit line in months                                                                                                                                       |
-| **NINQ**    | Number of recent credit inquiries                                                                                                                                             |
-| **CLNO**    | Number of existing credit lines                                                                                                                                               |
-| **DEBTINC** | Debt-to-income ratio (All monthly debt payments ÷ gross monthly income). This measures a borrower’s ability to manage monthly payments to repay the loan                      |
-
+The original dataset exceeds the GitHub's upload limit. For access to the data, please contact me through my portfolio website.
+https://charles-jiao.netlify.app/contact
 
 ## ❓ Problem Statement
 Predicting loan defaults is important for helping lenders make smarter decisions and reduce financial risk. It’s a challenging problem because people’s financial situations and repayment behaviors are complex, influenced by factors like credit history, debt, employment, and the purpose of the loan. In this project, we use historical loan data to build a machine learning model that predicts whether an applicant will default or repay, providing practical insights to guide lending decisions.
