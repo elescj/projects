@@ -46,9 +46,9 @@ The following steps outline the end-to-end process used in this project:
    - **Data Preprocessing**: Label the data, split into training and test set, normalize the images, and encode the categories.
 
 2. **Modelling**
-   - Trained **Logistic Regression**, **Decision Tree**, and **Random Forest** models separately to forecast customer conversion.
-   - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
-   - Evaluated model performance using relevant metrics and visualized the tuned results.
+   - Build two models with different neuron structures for comparison.
+   - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
+   - Run a prediction with the better model.
 
 ## 📝 Results
 
