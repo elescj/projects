@@ -44,15 +44,7 @@ The following steps outline the end-to-end process used in this project:
    - **Data Overview**: Examined the dataset to understand variable types, identify duplicates, and assess missing values.
    - **Initial Data Treatment**: Cleaned and structured the dataset to ensure readiness for exploratory data analysis (EDA).
 
-3. **Exploratory Data Analysis (EDA)**
-   - **Univariate Analysis**: Analyzed the distribution of numerical and categorical variables using histograms and descriptive statistics.
-   - **Bivariate Analysis**: Investigated relationships between independent variables and the target by:
-      - Using correlation heatmaps for numerical variables.
-      - Comparing numerical variable distributions across target classes with histograms and boxplots.
-      - Assessing conversion rates of categorical variables with stacked bar plots.
-   - **Data Treatment**: Imputed the missing value and treated outliers.
-
-4. **Modelling**
+2. **Modelling**
    - Trained **Logistic Regression**, **Decision Tree**, and **Random Forest** models separately to forecast customer conversion.
    - Tuned **hyperparameters** to improve predictive performance and mitigate overfitting.
    - Evaluated model performance using relevant metrics and visualized the tuned results.
