@@ -1,6 +1,6 @@
 # 🔊Audio MNIST Digit Recognition
-This project applies Convolutional Neural Network (CNN) models to classify food images into their respective categories, with the objective of developing the most accurate and reliable CNN architecture for food recognition.
-![Graphical Summary](attachments/food-picture.png)
+This project applies Artificial Neural Network (ANN) models to "hear" which digit number from a audio file, with the objective of developing the most accurate and reliable ANN architecture for food recognition.
+![Graphical Summary](attachments/digit-audio.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
