@@ -13,13 +13,12 @@ This project applies an Artificial Neural Network (ANN) to classify spoken digit
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** for **classifying spoken digits from audio recordings** into their respective categories (0–9). Using **Artificial Neural Networks (CNNs)**, the model learns visual patterns that capture the unique sound wave of each spoken digit, allowing it to accurately classify previously unheard (unlabeled) audios.
+This project implements a **deep learning pipeline** for **classifying spoken digits from audio recordings** into their respective categories (0–9). Using **Artificial Neural Networks (ANNs)**, the model learns distinctive numerical patterns from processed audio features, enabling it to accurately classify previously unheard (unlabeled) audio samples.
 
 The pipeline includes:
-- **Data preprocessing and image handling**
-- **Design and implementation of two CNN architectures**
-- **Model training, evaluation, and performance comparison**
-- **Demonstration of the best-performing model on sample images**
+- **Audio sampling and data processing**
+- **Modelling and ANN architecture**
+- **Model training and evaluationn**
 
 ## 📊 Dataset
 
