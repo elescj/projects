@@ -13,7 +13,7 @@ This project applies an Artificial Neural Network (ANN) to classify spoken digit
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** for **classifying food images** into their respective categories. Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each food type, allowing it to accurately classify previously unseen (unlabeled) images.
+This project implements a **deep learning pipeline** for **classifying spoken digits from audio recordings** into their respective categories (0–9). Using **Artificial Neural Networks (CNNs)**, the model learns visual patterns that capture the unique sound wave of each spoken digit, allowing it to accurately classify previously unheard (unlabeled) audios.
 
 The pipeline includes:
 - **Data preprocessing and image handling**
