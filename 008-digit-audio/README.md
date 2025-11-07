@@ -73,13 +73,20 @@ The models were evaluated on **test** datasets using standard classification met
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|----------|--------|----------|---------|
-| 0     | 0.77     | 0.65   | 0.71     | 362     |
-| 1     | 0.84     | 0.87   | 0.85     | 500     |
-| 2     | 0.77     | 0.89   | 0.82     | 232     |
+| 0     | 1.00     | 0.98   | 0.99     | 124     |
+| 1     | 0.99     | 0.99   | 0.99     | 123     |
+| 2     | 0.99     | 0.99   | 0.99     | 115     |
+| 3     | 0.99     | 1.00   | 1.00     | 121     |
+| 4     | 0.99     | 1.00   | 1.00     | 136     |
+| 5     | 1.00     | 1.00   | 1.00     | 126     |
+| 6     | 1.00     | 1.00   | 1.00     | 127     |
+| 7     | 0.99     | 1.00   | 1.00     | 121     |
+| 8     | 1.00     | 1.00   | 1.00     | 129     |
+| 9     | 1.00     | 0.99   | 1.00     | 128     |
 
-**Accuracy:** 0.80  
-**Macro Avg:** Precision: 0.79, Recall: 0.80, F1-Score: 0.79  
-**Weighted Avg:** Precision: 0.80, Recall: 0.80, F1-Score: 0.80
+**Accuracy:** 1.00  
+**Macro Avg:** Precision: 1.00, Recall: 1.00, F1-Score: 1.00  
+**Weighted Avg:** Precision: 1.00, Recall: 1.00, F1-Score: 1.00
 
 ## 💡 Insights & Recommendations
 
