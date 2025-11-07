@@ -91,54 +91,38 @@ The models were evaluated on **test** datasets using standard classification met
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
-In this project, we built a Convolutional Neural Network (CNN) to classify food images into three categories: **Bread**, **Soup**, and **Vegetable-Fruit**.  
 
-The model achieved an overall test accuracy of **66%**, with class-wise performance varying significantly:
+In this project, we built an **Artificial Neural Network (ANN)** to classify audio files into ten categories (0–9).
 
-- **Vegetable-Fruit**: Strong performance (F1-score 0.82), correctly classified most images.  
-- **Soup**: Moderate performance (F1-score 0.72) with high recall (0.90), indicating most Soup images were correctly identified.  
-- **Bread**: Weak performance (F1-score 0.35), frequently misclassified as Soup, showing challenges in distinguishing visually similar categories.  
+The model achieved an overall test accuracy of **100%**, with high precision, recall, and F1-scores across all classes.
 
-Confusion matrix analysis confirmed that the model struggles most with **Bread vs. Soup** due to overlapping visual features or possible dataset imbalance.  
+Analysis of the confusion matrix indicates that the model occasionally misclassifies the digit **three**, likely due to pronunciation variations or syllable similarity.
 
-Overall, the model demonstrates moderate capability in classifying food images, performing better on distinct classes (**Vegetable-Fruit**) than on similar ones (**Bread** and **Soup**).
+Overall, the results demonstrate that the ANN is highly effective and reliable at classifying spoken digits from audio recordings.
 
 ### ✅ Recommendations
-1. **Increase Data Variety and Augmentation**  
-   - Add more Bread images or apply data augmentation (rotation, flipping, scaling) to reduce misclassification.
 
-2. **Address Class Imbalance**  
-   - Use class weighting or oversampling techniques to give the model more emphasis on underrepresented classes.
-
-3. **Use Transfer Learning**  
-   - Pre-trained models like **VGG16**, **ResNet**, or **EfficientNet** could improve feature extraction, especially for visually similar classes.
-
-4. **Hyperparameter Tuning**  
-   - Experiment with different architectures, optimizers, learning rates, batch sizes, and dropout rates to improve generalization.
-
-5. **Additional Evaluation Metrics**  
-   - Consider precision-recall curves, ROC-AUC, or top-2 accuracy to better understand model performance on ambiguous cases.
-
-6. **Deployment Considerations**  
-   - For real-world use in a stock photography platform, implement a **human-in-the-loop verification** for low-confidence predictions to ensure labeling quality.
+For future work, the model could be further tested on noisy or real-world audio data to ensure robustness, and techniques like data augmentation or regularization could be applied to improve generalization. Overall, the project confirms that a relatively simple ANN architecture, combined with effective preprocessing, can achieve near-perfect performance for this classification task.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
-- **Python** – General purpose programming
-- **NumPy** – Numerical computations
-- **Pandas** – Data manipulation and analysis
-- **OpenCV** – Image processing and augmentation
-- **Matplotlib & Seaborn** – Data and performance visualization
-- **Scikit-learn** – Data preprocessing, model evaluation, and metrics
-- **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
-- **Warnings** – For suppressing non-critical output
+- **Python** – General-purpose programming and scripting  
+- **NumPy** – Numerical computations and array manipulation  
+- **Pandas** – Data manipulation and analysis  
+- **Librosa** – Audio processing and feature extraction (MFCCs, spectrograms)  
+- **Matplotlib & Seaborn** – Data and performance visualization  
+- **IPython.display.Audio** – Audio playback for exploratory analysis  
+- **TQDM** – Progress visualization for loops and data processing  
+- **Scikit-learn** – Data preprocessing, train-test splitting, and model evaluation metrics  
+- **TensorFlow & Keras** – Building, training, and deploying Artificial Neural Networks (ANN)  
+- **OS** – File and directory operations
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/007-food-picture-lr.git
-cd 007-food-image-lr
+git clone https://github.com/elescj/008-digit-audio-lr.git
+cd 008-digit-audio-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
