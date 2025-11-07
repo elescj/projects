@@ -24,9 +24,8 @@ The pipeline includes:
 
 The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
 
-- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
-- Each folder has **three subfolders**, each representing a **food category**.
-- All images are in **JPG format**.
+- The dataset is provided in a **folder**, containing each digit audios in a folder.
+- All images are in **wav format**.
 
 > **Note:** The original dataset exceeds GitHub's upload limit.  
 > To access the data, please contact me via my portfolio website:  
