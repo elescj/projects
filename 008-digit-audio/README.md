@@ -32,20 +32,33 @@ Each folder contains multiple `.wav` files, where each file represents a spoken 
 
 
 ## ❓ Problem Statement
-Classifying food categories from images is important for applications such as automated dietary tracking, restaurant menu organization, and food recommendation systems. It’s a challenging problem because food images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use a labeled dataset of food images to build convolutional neural network (CNN) models that classify images into their respective food categories, providing practical insights into visual recognition of foods.
+Despite major advancements in audio recognition, one of the key challenges remains efficiently transforming and interpreting raw audio data for accurate classification.  
+Raw audio waveforms contain vast amounts of data, making them computationally expensive and difficult for neural networks to process directly. To overcome this, the use of spectrogram-based representations—particularly **Mel-Frequency Cepstral Coefficients (MFCCs)**—has become a preferred approach due to their ability to compactly capture the essential frequency and temporal characteristics of sound.
+
+The goal of this project is to develop an **Artificial Neural Network (ANN)** capable of accurately classifying spoken digits (0–9) based on their corresponding MFCC spectrograms.  
+Each input audio sample represents a short recording of a speaker pronouncing a single digit, and the model is trained to learn distinguishing frequency patterns that correspond to each number.  
+
+By doing so, this project demonstrates how deep learning models can effectively “hear” and recognize audio content through numerical pattern recognition, bridging the gap between sound and structured machine understanding.
 
 ## 💻 Methodology
+
 The following steps outline the end-to-end process used in this project:
 
-1. **Data (image) Processing**
-   - **Data Retrieval and Preparation**: Extract data from the ZIP file and prepare the training and test data.
-   - **Data Visualization**: Randomly choose a few images and observe their potential features that may be extracted in CNN.
-   - **Data Preprocessing**: Label the data, split into training and test set, normalize the images, and encode the categories.
+### 1. **Data (Audio) Processing**
+- **Data Retrieval and Preparation**:  
+  Extract all `.wav` audio files from the dataset folders and organize them into training and testing sets. Each folder corresponds to one of the 10 digit classes (0–9).  
+- **Data Visualization**:  
+  Randomly select several audio samples to visualize their waveform and spectrogram representations, identifying patterns that may be useful for classification.  
+- **Feature Extraction (MFCCs)**:  
+  Convert each audio signal into **Mel-Frequency Cepstral Coefficients (MFCCs)** — a compact numerical representation that captures both frequency and temporal characteristics of sound. These MFCC features serve as the input to the neural network.
 
-2. **Modelling**
-   - Build two models with different neuron structures for comparison.
-   - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
-   - Run a prediction with the better model.
+### 2. **Modeling**
+- **Model Design**:  
+  Construct an **Artificial Neural Network (ANN)** with multiple dense layers. The model is designed to learn non-linear relationships between MFCC features and their corresponding digit labels.  
+- **Model Training**:  
+  Train the ANN on the processed dataset, using a validation split to monitor performance and prevent overfitting.  
+- **Model Evaluation**:  
+  Evaluate the trained model on unseen test data using metrics such as accuracy, precision, recall, and F1-score to assess its classification performance.
 
 ## 📝 Results
 
