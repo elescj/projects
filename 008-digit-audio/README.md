@@ -1,5 +1,5 @@
 # 🔊Audio MNIST Digit Recognition
-This project applies Artificial Neural Network (ANN) models to "hear" which digit number from a audio file, with the objective of developing the most accurate and reliable ANN architecture for food recognition.
+This project applies an Artificial Neural Network (ANN) to classify spoken digits (0–9) from audio recordings. The objective is to develop a highly accurate and reliable neural network architecture for audio-based digit recognition.
 ![Graphical Summary](attachments/digit-audio.png)
 
 ## 📂 Table of Contents
