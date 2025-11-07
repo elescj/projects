@@ -22,10 +22,9 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
+The dataset used in this project is sourced from the MIT Applied Data Science Program. It consists of audio recordings of spoken digits, organized into separate folders for each class (0–9).
 
-- The dataset is provided in a **folder**, containing each digit audios in a folder.
-- All images are in **wav format**.
+Each folder contains multiple `.wav` files, where each file represents a spoken instance of the corresponding digit. These audio samples serve as the input data for training and evaluating the model.
 
 > **Note:** The original dataset exceeds GitHub's upload limit.  
 > To access the data, please contact me via my portfolio website:  
