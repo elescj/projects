@@ -23,15 +23,8 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
-
-- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
-- Each folder has **three subfolders**, each representing a **food category**.
-- All images are in **JPG format**.
-
-> **Note:** The original dataset exceeds GitHub's upload limit.  
-> To access the data, please contact me via my portfolio website:  
-> [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
+The CIFAR-10 dataset consists of 60000 32x32x3, i.e., color images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
+> [Learn more about the data](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 
 ## ❓ Problem Statement
