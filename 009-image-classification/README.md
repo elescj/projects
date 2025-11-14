@@ -78,54 +78,32 @@ The models were evaluated on **test** datasets using standard classification met
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
-In this project, we built a Convolutional Neural Network (CNN) to classify food images into three categories: **Bread**, **Soup**, and **Vegetable-Fruit**.  
+In this project, we built a Convolutional Neural Network (CNN) to classify images on the CIFAR-10 dataset.  
 
-The model achieved an overall test accuracy of **66%**, with class-wise performance varying significantly:
-
-- **Vegetable-Fruit**: Strong performance (F1-score 0.82), correctly classified most images.  
-- **Soup**: Moderate performance (F1-score 0.72) with high recall (0.90), indicating most Soup images were correctly identified.  
-- **Bread**: Weak performance (F1-score 0.35), frequently misclassified as Soup, showing challenges in distinguishing visually similar categories.  
-
-Confusion matrix analysis confirmed that the model struggles most with **Bread vs. Soup** due to overlapping visual features or possible dataset imbalance.  
-
-Overall, the model demonstrates moderate capability in classifying food images, performing better on distinct classes (**Vegetable-Fruit**) than on similar ones (**Bread** and **Soup**).
+We have seen four different iterations of the CNN model and built an intuition about how to improve the model by tuning various hyperparameters and using different techniques. There is still plenty of scope for improvement and you can try out tuning different hyperparameters to improve the model performance.
 
 ### ✅ Recommendations
-1. **Increase Data Variety and Augmentation**  
-   - Add more Bread images or apply data augmentation (rotation, flipping, scaling) to reduce misclassification.
+1. **Tuning hyperparameters**  
+   - Tune hyper parameters to improve model performance.
 
-2. **Address Class Imbalance**  
-   - Use class weighting or oversampling techniques to give the model more emphasis on underrepresented classes.
-
-3. **Use Transfer Learning**  
-   - Pre-trained models like **VGG16**, **ResNet**, or **EfficientNet** could improve feature extraction, especially for visually similar classes.
-
-4. **Hyperparameter Tuning**  
-   - Experiment with different architectures, optimizers, learning rates, batch sizes, and dropout rates to improve generalization.
-
-5. **Additional Evaluation Metrics**  
-   - Consider precision-recall curves, ROC-AUC, or top-2 accuracy to better understand model performance on ambiguous cases.
-
-6. **Deployment Considerations**  
-   - For real-world use in a stock photography platform, implement a **human-in-the-loop verification** for low-confidence predictions to ensure labeling quality.
+2. **Increasing CNN layers**  
+   - Increase the layer number to improve prediction accuracy.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
 - **NumPy** – Numerical computations
 - **Pandas** – Data manipulation and analysis
-- **OpenCV** – Image processing and augmentation
 - **Matplotlib & Seaborn** – Data and performance visualization
 - **Scikit-learn** – Data preprocessing, model evaluation, and metrics
 - **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
-- **Warnings** – For suppressing non-critical output
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/007-food-picture-lr.git
-cd 007-food-image-lr
+git clone https://github.com/elescj/009-image-classification-lr.git
+cd 009-image-classification-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
@@ -137,4 +115,3 @@ pip install -r requirements.txt
 # Run the script
 python main.py
 ```
-
