@@ -59,14 +59,21 @@ The models were evaluated on **test** datasets using standard classification met
 **Classification Report**
 
 | Class | Precision | Recall | F1-Score | Support |
-|-------|----------|--------|----------|---------|
-| 0     | 0.77     | 0.65   | 0.71     | 362     |
-| 1     | 0.84     | 0.87   | 0.85     | 500     |
-| 2     | 0.77     | 0.89   | 0.82     | 232     |
+|-------|----------|--------|----------|----------|
+| 0     | 0.83     | 0.83   | 0.83     | 1000     |
+| 1     | 0.85     | 0.89   | 0.87     | 1000     |
+| 2     | 0.75     | 0.67   | 0.71     | 1000     |
+| 3     | 0.58     | 0.66   | 0.61     | 1000     |
+| 4     | 0.74     | 0.76   | 0.75     | 1000     |
+| 5     | 0.63     | 0.70   | 0.66     | 1000     |
+| 6     | 0.87     | 0.79   | 0.83     | 1000     |
+| 7     | 0.84     | 0.82   | 0.83     | 1000     |
+| 8     | 0.83     | 0.91   | 0.87     | 1000     |
+| 9     | 0.93     | 0.75   | 0.83     | 1000     |
 
-**Accuracy:** 0.80  
-**Macro Avg:** Precision: 0.79, Recall: 0.80, F1-Score: 0.79  
-**Weighted Avg:** Precision: 0.80, Recall: 0.80, F1-Score: 0.80
+**Accuracy:** 0.78 
+**Macro Avg:** Precision: 0.78, Recall: 0.78, F1-Score: 0.78  
+**Weighted Avg:** Precision: 0.78, Recall: 0.78, F1-Score: 0.78
 
 ## 💡 Insights & Recommendations
 
