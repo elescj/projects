@@ -13,13 +13,13 @@ This project builds a multi-class image classification model to predict 10 objec
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** for **classifying food images** into their respective categories. Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each food type, allowing it to accurately classify previously unseen (unlabeled) images.
+This project implements a **deep learning pipeline** for **classifying images** into their respective categories. Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each food type, allowing it to accurately classify previously unseen (unlabeled) images; using **Transfer Learning**, the pre-trainrf model processing new images with higher productivity.
 
 The pipeline includes:
 - **Data preprocessing and image handling**
-- **Design and implementation of two CNN architectures**
+- **Design and implementation of three CNN architectures**
 - **Model training, evaluation, and performance comparison**
-- **Demonstration of the best-performing model on sample images**
+- **Transfer learning and prediction**
 
 ## 📊 Dataset
 
