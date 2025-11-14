@@ -43,6 +43,10 @@ The following steps outline the end-to-end process used in this project:
    - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
    - Run a prediction with the better model.
 
+3. **Transfer Learning**
+   - Build one transfer layer.
+   - Compile and fit the model.
+
 ## 📝 Results
 
 The models were evaluated on **test** datasets using standard classification metrics.  
