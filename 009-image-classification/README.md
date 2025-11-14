@@ -1,6 +1,6 @@
-# 🍲 CIFAR-10 Image Classification Using CNN and Transfer Learning
-This project applies Convolutional Neural Network (CNN) models to classify food images into their respective categories, with the objective of developing the most accurate and reliable CNN architecture for food recognition.
-![Graphical Summary](attachments/food-picture.png)
+# 🔎 CIFAR-10 Image Classification Using CNN and Transfer Learning
+This project builds a multi-class image classification model to predict 10 object categories from the CIFAR-10 dataset using Convolutional Neural Networks (CNNs) and Transfer Learning, with the objective of improving accuracy and training efficiency on small image datasets.
+![Graphical Summary](attachments/image-classification.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
