@@ -23,7 +23,7 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The SVHN dataset consists more than 600,000 labeled instances of digits captured from house numbers. Each sample is provided as a 32×32 three-channel (RGB) image, offering consistent dimensionality suitable for training deep learning models. The dataset is organized into three primary subsets:
+The SVHN dataset contains over than 600,000 labeled digits images extracted from real-world street-view house numbers. Each sample is a 32×32 (RGB) image, providing consistent dimensions ideal for training deep learning models. The dataset is divided into three primary subsets:
 
 - Training set: 73,257 images
 - Test set: 26,032 images
