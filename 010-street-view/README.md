@@ -23,9 +23,11 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The CIFAR-10 dataset consists of 60000 32x32x3, i.e., color images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
-> [Learn more about the data](https://www.cs.toronto.edu/~kriz/cifar.html)
+The SVHN dataset consists more than 600,000 labeled instances of digits captured from house numbers. Each sample is provided as a 32×32 three-channel (RGB) image, offering consistent dimensionality suitable for training deep learning models. The dataset is organized into three primary subsets:
 
+- Training set: 73,257 images
+- Test set: 26,032 images
+- Extra set: 531,131 images for extended training
 
 ## ❓ Problem Statement
 Classifying images is important for applications such as computer vision, automation, and robotics. It’s a challenging problem because images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use the CIFAR-10 dataset (Canadian Institute for Advanced Research) to build convolutional neural network (CNN) models that classify images into their respective categories, providing a pre-trained model that is later applied in transfer learning for vast image classification application.
