@@ -78,23 +78,14 @@ The second model were evaluated on **test** datasets using standard classificati
 
 ## 💡 Insights & Recommendations
 
-### 🔎 Insights
-In this project, we built a Convolutional Neural Network (CNN) to classify images on the SVHN dataset.  
-
-We have seen four different iterations of the CNN model and built an intuition about how to improve the model by tuning various hyperparameters and using different techniques. There is still plenty of scope for improvement and you can try out tuning different hyperparameters to improve the model performance.
-
-### ✅ Recommendations
-1. **Tuning hyperparameters**  
-   - Tune hyper parameters to improve model performance.
-
-2. **Increasing CNN layers**  
-   - Increase the layer number to improve prediction accuracy.
+- Fully connected networks provide a baseline for digit recognition, but their performance is limited on image data due to lack of spatial feature extraction.
+- Incorporating convolutional neural networks (CNNs) could capture spatial patterns and improve recognition accuracy.
+- Further improvements could be achieved by experimenting with deeper architectures, data augmentation, and hyperparameter tuning.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
 - **NumPy** – Numerical computations
-- **Pandas** – Data manipulation and analysis
 - **Matplotlib & Seaborn** – Data and performance visualization
 - **Scikit-learn** – Data preprocessing, model evaluation, and metrics
 - **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
@@ -103,8 +94,8 @@ We have seen four different iterations of the CNN model and built an intuition a
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/009-image-classification-lr.git
-cd 009-image-classification-lr
+git clone https://github.com/elescj/010-street-view-lr.git
+cd 010-street-view-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
@@ -116,4 +107,3 @@ pip install -r requirements.txt
 # Run the script
 python main.py
 ```
-
