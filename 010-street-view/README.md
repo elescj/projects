@@ -30,7 +30,7 @@ The SVHN dataset contains over than 600,000 labeled digits images extracted from
 - Extra set: 531,131 images for extended training
 
 ## ❓ Problem Statement
-Classifying images is important for applications such as computer vision, automation, and robotics. It’s a challenging problem because images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use the CIFAR-10 dataset (Canadian Institute for Advanced Research) to build convolutional neural network (CNN) models that classify images into their respective categories, providing a pre-trained model that is later applied in transfer learning for vast image classification application.
+Classifying images is important for applications such as computer vision, automation, and robotics. It’s a challenging problem because images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use the SVHN dataset to build convolutional neural network (CNN) models that classify images into their respective categories, providing a pre-trained model that is later applied in prediction.
 
 ## 💻 Methodology
 The following steps outline the end-to-end process used in this project:
