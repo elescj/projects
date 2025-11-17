@@ -1,6 +1,6 @@
 # 🏘️ Using CNN to Recognize Street View Housing Number
 This project builds a multi-class image classification model to predict 10 object categories from the CIFAR-10 dataset using Convolutional Neural Networks (CNNs) and Transfer Learning, with the objective of improving accuracy and training efficiency on small image datasets.
-![Graphical Summary](attachments/image-classification.png)
+![Graphical Summary](attachments/street-view.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
