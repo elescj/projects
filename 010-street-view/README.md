@@ -47,7 +47,7 @@ The following steps outline the end-to-end process used in this project:
 
 ## 📝 Results
 
-The models were evaluated on **test** datasets using standard classification metrics.  
+The second model were evaluated on **test** datasets using standard classification metrics.  
 
 - **Precision (1)**: When the model predicts a conversion, how often it is correct.  
 - **Recall (1)**: Out of all actual conversions, how many were correctly identified.  
@@ -58,20 +58,20 @@ The models were evaluated on **test** datasets using standard classification met
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|----------|--------|----------|----------|
-| 0     | 0.83     | 0.83   | 0.83     | 1000     |
-| 1     | 0.85     | 0.89   | 0.87     | 1000     |
-| 2     | 0.75     | 0.67   | 0.71     | 1000     |
-| 3     | 0.58     | 0.66   | 0.61     | 1000     |
-| 4     | 0.74     | 0.76   | 0.75     | 1000     |
-| 5     | 0.63     | 0.70   | 0.66     | 1000     |
-| 6     | 0.87     | 0.79   | 0.83     | 1000     |
-| 7     | 0.84     | 0.82   | 0.83     | 1000     |
-| 8     | 0.83     | 0.91   | 0.87     | 1000     |
-| 9     | 0.93     | 0.75   | 0.83     | 1000     |
+| 0     | 0.84     | 0.78   | 0.81     | 1814     |
+| 1     | 0.73     | 0.83   | 0.78     | 1828     |
+| 2     | 0.72     | 0.82   | 0.77     | 1803     |
+| 3     | 0.68     | 0.75   | 0.71     | 1719     |
+| 4     | 0.86     | 0.79   | 0.83     | 1812     |
+| 5     | 0.73     | 0.70   | 0.72     | 1768     |
+| 6     | 0.81     | 0.75   | 0.78     | 1832     |
+| 7     | 0.87     | 0.70   | 0.77     | 1808     |
+| 8     | 0.64     | 0.76   | 0.70     | 1812     |
+| 9     | 0.79     | 0.73   | 0.76     | 1804     |
 
-**Accuracy:** 0.78 
-**Macro Avg:** Precision: 0.78, Recall: 0.78, F1-Score: 0.78  
-**Weighted Avg:** Precision: 0.78, Recall: 0.78, F1-Score: 0.78
+**Accuracy:** 0.76
+**Macro Avg:** Precision: 0.77, Recall: 0.76, F1-Score: 0.76
+**Weighted Avg:** Precision: 0.77, Recall: 0.76, F1-Score: 0.76
 
 ## 💡 Insights & Recommendations
 
