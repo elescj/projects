@@ -13,13 +13,13 @@ This project builds and compares two convolutional neural net work  (CNN) models
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** for **classifying images** into their respective categories. Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each food type, allowing it to accurately classify previously unseen (unlabeled) images; using **Transfer Learning**, the pre-trainrf model processing new images with higher productivity.
+This project implements a **deep learning pipeline** for **classifying written digits from stree-view house numbers** into their respective categories (0-9). Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each writting digit, allowing it to accurately classify previously unseen (unlabeled) images.
 
 The pipeline includes:
 - **Data preprocessing and image handling**
 - **Design and implementation of three CNN architectures**
 - **Model training, evaluation, and performance comparison**
-- **Transfer learning and prediction**
+- **Prediction on the test data and evaluation**
 
 ## 📊 Dataset
 
