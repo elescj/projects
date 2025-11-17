@@ -13,13 +13,13 @@ This project builds and compares two convolutional neural net work  (CNN) models
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** for **classifying written digits from stree-view house numbers** into their respective categories (0-9). Using **Convolutional Neural Networks (CNNs)**, the model learns visual patterns that capture the unique characteristics of each writting digit, allowing it to accurately classify previously unseen (unlabeled) images.
+This project implements a **deep learning pipeline** to **classify written digits (0-9) from stree-view house numbers** using **Convolutional Neural Networks (CNNs)**. The model learns visual patterns that capture the unique characteristics of each digit, enabling accurate classification of previously unseen (unlabeled) images.
 
 The pipeline includes:
 - **Data preprocessing and image handling**
-- **Design and implementation of three CNN architectures**
+- **Design and implementation of two CNN architectures**
 - **Model training, evaluation, and performance comparison**
-- **Prediction on the test data and evaluation**
+- **Prediction on the test data and assessment of model accuracy**
 
 ## 📊 Dataset
 
