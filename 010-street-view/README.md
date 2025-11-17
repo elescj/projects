@@ -1,5 +1,5 @@
 # 🏘️ Using CNN to Recognize Street View Housing Number
-This project builds two Convolutional Neural Networks (CNNs) models to recognize house number from street view, compares those two models, and makes prediction with the better one.
+This project builds two written digit (0-9) classification models to recognize house number from street view from theh5py dataset using Convolutional Neural Networks (CNNs), compares those two models, and makes prediction with the better performing model.
 ![Graphical Summary](attachments/street-view.png)
 
 ## 📂 Table of Contents
