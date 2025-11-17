@@ -30,7 +30,7 @@ The SVHN dataset contains over than 600,000 labeled digits images extracted from
 - Extra set: 531,131 images for extended training
 
 ## ❓ Problem Statement
-Classifying images is important for applications such as computer vision, automation, and robotics. It’s a challenging problem because images can vary widely in appearance due to differences in presentation, lighting, angle, and portion size. In this project, we use the SVHN dataset to build convolutional neural network (CNN) models that classify images into their respective categories, providing a pre-trained model that is later applied in prediction.
+Classifying images is essential in computer vision, automation, and robotics, it remains challenging variations in lighting, orientation, and overall image quality. In this project, I used the SVHN dataset to develop CNN-based classification models capable of accurately identifying digit images. The project produces a trained deep learning model along with a full training-evaluation pipeline that supports downstream prediction tasks.
 
 ## 💻 Methodology
 The following steps outline the end-to-end process used in this project:
