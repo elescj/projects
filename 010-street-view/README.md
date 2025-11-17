@@ -73,6 +73,9 @@ The second model were evaluated on **test** datasets using standard classificati
 **Macro Avg:** Precision: 0.77, Recall: 0.76, F1-Score: 0.76
 **Weighted Avg:** Precision: 0.77, Recall: 0.76, F1-Score: 0.76
 
+**Confusion Matrix/ Heatmap**
+![Confusion Matrix](attachments/confusion-matrix.png)
+
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
