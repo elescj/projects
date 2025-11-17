@@ -79,7 +79,7 @@ The second model were evaluated on **test** datasets using standard classificati
 ## 💡 Insights & Recommendations
 
 ### 🔎 Insights
-In this project, we built a Convolutional Neural Network (CNN) to classify images on the CIFAR-10 dataset.  
+In this project, we built a Convolutional Neural Network (CNN) to classify images on the SVHN dataset.  
 
 We have seen four different iterations of the CNN model and built an intuition about how to improve the model by tuning various hyperparameters and using different techniques. There is still plenty of scope for improvement and you can try out tuning different hyperparameters to improve the model performance.
 
