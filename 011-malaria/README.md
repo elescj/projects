@@ -1,5 +1,5 @@
 # 🦟 Automated Malaria Detection Using CNNs and Transfer Learning
-This project builds and compares two convolutional neural net work  (CNN) models to classify digits (0-9) from stree-view house numbers using the SVHN dataset. The better-performing model is then used to make predictions on unseen images, demonstrating the effectiveness of CNNs for real-world digit recognition.
+This project builds and compares four convolutional neural net work (CNN) models to classify blood cell (uninfected/ parasitized) using microscopic images. Transfer learning is then applied to make predictions (pre-trained VGG16 model) on unseen images, demonstrating the effectiveness of CNNs for real-world computer vision.
 ![Graphical Summary](attachments/malaria.png)
 
 ## 📂 Table of Contents
