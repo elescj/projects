@@ -77,9 +77,23 @@ The pre-trained model were evaluated on **test** datasets using standard classif
 
 ## 💡 Insights & Recommendations
 
-- Fully connected networks provide a baseline for digit recognition, but their performance is limited on image data due to lack of spatial feature extraction.
-- Incorporating convolutional neural networks (CNNs) could capture spatial patterns and improve recognition accuracy.
-- Further improvements could be achieved by experimenting with deeper architectures, data augmentation, and hyperparameter tuning.
+### Insights
+- The CNN model achieved an overall accuracy of 86% on the test set.
+- The model demonstrated high sensitivity for parasitized cells, correctly identifying 99% of malaria-infected images.
+- The main source of error was the misclassification of uninfected cells as parasitized, accounting for 27% of uninfected images.
+- Data visualization and analysis showed that the dataset is balanced, and normalization significantly helped in stabilizing the training process.
+- Using transfer learning with VGG16 improved feature extraction and reduced training time compared to training a CNN from scratch.
+
+### Implications
+- The model can assist medical practitioners in automated screening of malaria, potentially reducing human error and speeding up diagnosis.
+- High sensitivity to parasitized cells ensures that infected cases are rarely missed, which is critical for early treatment.
+- Misclassification of uninfected cells indicates that further improvements are needed to reduce false positives, possibly through more advanced architectures or larger, higher-quality datasets.
+
+### Future Work
+- Explore more sophisticated CNN architectures and ensemble methods to improve classification accuracy.
+- Implement additional preprocessing techniques, such as contrast enhancement or stain normalization, to improve image quality.
+- Expand the dataset to include diverse cell images from different sources to enhance the model's robustness.
+- Integrate the model into a real-time diagnostic system for clinical use.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
@@ -88,13 +102,14 @@ The pre-trained model were evaluated on **test** datasets using standard classif
 - **Matplotlib & Seaborn** – Data and performance visualization
 - **Scikit-learn** – Data preprocessing, model evaluation, and metrics
 - **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
+- **OpenCV** – Image processing and augmentation
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/010-street-view-lr.git
-cd 010-street-view-lr
+git clone https://github.com/elescj/011-malaria.git
+cd 011-malaria-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
@@ -106,4 +121,3 @@ pip install -r requirements.txt
 # Run the script
 python main.py
 ```
-
