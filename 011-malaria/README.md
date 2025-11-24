@@ -1,6 +1,6 @@
-# 🏘️ Using CNN to Recognize Street View Housing Number
+# 🦟 Automated Malaria Detection Using CNNs and Transfer Learning
 This project builds and compares two convolutional neural net work  (CNN) models to classify digits (0-9) from stree-view house numbers using the SVHN dataset. The better-performing model is then used to make predictions on unseen images, demonstrating the effectiveness of CNNs for real-world digit recognition.
-![Graphical Summary](attachments/street-view.png)
+![Graphical Summary](attachments/malaria.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
