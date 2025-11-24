@@ -34,7 +34,7 @@ The dataset for this project is sourced from the **MIT Applied Data Science Prog
 > [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
 
 ## ❓ Problem Statement
-Classifying images is essential in computer vision, automation, and robotics, it remains challenging variations in lighting, orientation, and overall image quality. In this project, I used the SVHN dataset to develop CNN-based classification models capable of accurately identifying digit images. The project produces a trained deep learning model along with a full training-evaluation pipeline that supports downstream prediction tasks.
+Classifying images is essential in computer vision, automation, and robotics, it remains challenging in fields such as public health where high accuracy makes great significance. In this project, I used the microscopic images to develop CNN-based classification models capable of accurately identifying blood cell images. The project produces a trained deep learning model along with a full training-evaluation pipeline that supports downstream prediction tasks.
 
 ## 💻 Methodology
 The following steps outline the end-to-end process used in this project:
