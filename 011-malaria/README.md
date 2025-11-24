@@ -23,11 +23,11 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The SVHN dataset contains over than 600,000 labeled digits images extracted from real-world street-view house numbers. Each sample is a 32×32 (RGB) image, providing consistent dimensions ideal for training deep learning models. The dataset is divided into three primary subsets:
+The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
 
-- Training set: 73,257 images
-- Test set: 26,032 images
-- Extra set: 531,131 images for extended training
+- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
+- Each folder has **two subfolders**, each representing a **health condition of the cell**.
+- All images are in **PNG format**.
 
 > **Note:** The original dataset exceeds GitHub's upload limit.  
 > To access the data, please contact me via my portfolio website:  
