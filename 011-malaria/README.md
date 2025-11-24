@@ -29,6 +29,10 @@ The SVHN dataset contains over than 600,000 labeled digits images extracted from
 - Test set: 26,032 images
 - Extra set: 531,131 images for extended training
 
+> **Note:** The original dataset exceeds GitHub's upload limit.  
+> To access the data, please contact me via my portfolio website:  
+> [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
+
 ## ❓ Problem Statement
 Classifying images is essential in computer vision, automation, and robotics, it remains challenging variations in lighting, orientation, and overall image quality. In this project, I used the SVHN dataset to develop CNN-based classification models capable of accurately identifying digit images. The project produces a trained deep learning model along with a full training-evaluation pipeline that supports downstream prediction tasks.
 
