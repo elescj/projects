@@ -50,8 +50,8 @@ The following steps outline the end-to-end process used in this project:
    - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
 
 3. **Transfer Learning**
-   - Build four models with different neuron structures for comparison.
-   - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
+   - Build a transfer learning model with pre-trained VGG16 model.
+   - Evaluate the model accuracy and confusion matrix.
 
 ## 📝 Results
 
