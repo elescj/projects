@@ -45,9 +45,13 @@ The following steps outline the end-to-end process used in this project:
    - **Data Preprocessing**: Label the data, split into training and test set, normalize the images, and encode the categories.
 
 2. **Modelling**
-   - Build two models with different neuron structures for comparison.
+   - Build four models with different neuron structures for comparison.
+   - The models include an initial base model, refined model with more neuron layers and augmented data.
    - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
-   - Run a prediction with the better model.
+
+3. **Transfer Learning**
+   - Build four models with different neuron structures for comparison.
+   - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
 
 ## 📝 Results
 
