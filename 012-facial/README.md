@@ -1,5 +1,5 @@
 # 😀 Facial Emotion Recognition: CNNs and Transfer Learning for Grayscale vs RGB
-This project builds and compares four convolutional neural net work (CNN) models to classify blood cell (uninfected/ parasitized) using microscopic images. Transfer learning is then applied to make predictions (pre-trained VGG16 model) on unseen images, demonstrating the effectiveness of CNNs for real-world computer vision.
+This project explores facial emotion recognition using deep learning. Multiple convolutional neural network models were trained and evaluated on grayscale and RGB images to analyze the impact of color representation on model performance. The study further investigates transfer learning techniques to improve accuracy and generalization, with comprehensive evaluation using accuracy, loss, and confusion matrices.
 ![Graphical Summary](attachments/facial.png)
 
 ## 📂 Table of Contents
