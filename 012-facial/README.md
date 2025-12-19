@@ -98,9 +98,11 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 - Weighted Average: Precision = 0.70, Recall = 0.69, F1-Score = 0.69  
 
 **Confusion Matrix/ Heatmap**
+
 ![Confusion Matrix](attachments/confusion-matrix.png)
 
 **Accuracy vs. Epoch**
+
 ![Accuracy vs. Epoch](attachments/accuracy.png)
 
 ## 💡 Insights & Recommendations
