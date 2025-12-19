@@ -13,13 +13,13 @@ This project explores facial emotion recognition using deep learning. Multiple c
 - [How to Run](#how-to-run)
 
 ## 👓 Overview
-This project implements a **deep learning pipeline** to **classify blood cell (uninfected/ parasitized) using microscopic images** using **Convolutional Neural Networks (CNNs)**. The model learns visual patterns that capture the unique characteristics of each image, enabling accurate classification of previously unseen (unlabeled) images.
+This project implements a **deep learning pipeline** to **classify facial emotions (happy, sad, neutral, surprise)** from facial images using **Convolutional Neural Networks (CNNs)**. The models learn discriminative visual features from facial expressions, enabling accurate classification of previously unseen (unlabeled) images.
 
 The pipeline includes:
-- **Data preprocessing and image handling**
-- **Design and implementation of four CNN architectures**
-- **Model training, evaluation, and performance comparison**
-- **Transfer learning using the pre-trained VGG16 model and model evaluation**
+- Data preprocessing and image handling (grayscale and RGB)
+- Design and implementation of multiple CNN architectures
+- Model training, evaluation, and performance comparison
+- Transfer learning using a pre-trained **VGG16** model
 
 ## 📊 Dataset
 
