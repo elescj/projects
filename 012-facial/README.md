@@ -152,14 +152,13 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 - **Matplotlib & Seaborn** – Data and performance visualization
 - **Scikit-learn** – Data preprocessing, model evaluation, and metrics
 - **TensorFlow & Keras** – Building, training, and deploying Convolutional Neural Networks (CNN)
-- **OpenCV** – Image processing and augmentation
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/011-malaria.git
-cd 011-malaria-lr
+git clone https://github.com/elescj/012-facial.git
+cd 012-facial-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
