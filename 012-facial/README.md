@@ -128,16 +128,22 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 - Certain classes (e.g., **“happy”** or **“surprise”**) were predicted better than others, indicating **class-specific bias**.  
 - Models struggle with subtle emotions like **“neutral”** or **“sad”**, which may have overlapping facial features.
 
-### Implications
-- The model can assist medical practitioners in automated screening of malaria, potentially reducing human error and speeding up diagnosis.
-- High sensitivity to parasitized cells ensures that infected cases are rarely missed, which is critical for early treatment.
-- Misclassification of uninfected cells indicates that further improvements are needed to reduce false positives, possibly through more advanced architectures or larger, higher-quality datasets.
-
 ### Future Work
-- Explore more sophisticated CNN architectures and ensemble methods to improve classification accuracy.
-- Implement additional preprocessing techniques, such as contrast enhancement or stain normalization, to improve image quality.
-- Expand the dataset to include diverse cell images from different sources to enhance the model's robustness.
-- Integrate the model into a real-time diagnostic system for clinical use.
+
+**Input Representation**
+- Use **grayscale images** with standardized size (48×48) to simplify the model and reduce computational overhead.  
+- Optionally, apply **histogram equalization** or **normalization** for enhanced feature contrast.
+
+**Model Architecture**
+- **Advanced CNN (Model 2)** is recommended as the base:  
+  - 3 convolutional blocks with `Conv2D → BatchNormalization → LeakyReLU → MaxPooling → Dropout`.  
+  - Flatten → Dense layers (512 → 128) → Softmax.  
+- Keep the network **shallow enough** to avoid overfitting while capturing meaningful spatial features.
+
+**Training Strategy**
+- Use **data augmentation**: horizontal flips, slight brightness adjustment, shear transforms.  
+- Apply **early stopping** and **learning rate reduction** to stabilize training.  
+- Train for **20–30 epochs** with a moderate batch size for optimal performance.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
