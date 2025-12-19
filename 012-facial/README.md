@@ -60,6 +60,8 @@ The following steps outline the end-to-end process used in this project:
 
 ## 📝 Results
 
+### Overall Comparison
+
 The models were evaluated on the test set using **accuracy, loss, and confusion matrices**. Both grayscale and RGB images were compared across multiple CNN architectures and transfer learning approaches. A quick overview at different models' accuracy.
 
 | Model / Technique           | Input Mode | Accuracy | Remarks                                               |
@@ -73,6 +75,8 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 | ResNet50 TL                 | RGB        | 0.25    | Similar to VGG16, unsuitable for small emotion dataset |
 | EfficientNet TL             | RGB        | 0.25    | Small dataset and grayscale features not captured   |
 
+### Final Model
+
 - **Precision (1)**: When the model predicts a conversion, how often it is correct.  
 - **Recall (1)**: Out of all actual conversions, how many were correctly identified.  
 - **F1-Score (1)**: Balance between precision and recall.  
@@ -81,15 +85,22 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 **Classification Report**
 
 | Class | Precision | Recall | F1-Score | Support |
-|-------|----------|--------|----------|----------|
-| 0     | 0.99     | 0.73   | 0.84     | 1300     |
-| 1     | 0.78     | 0.99   | 0.87     | 1300     |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.66      | 0.84   | 0.74     | 32      |
+| 1     | 0.60      | 0.56   | 0.58     | 32      |
+| 2     | 0.63      | 0.59   | 0.61     | 32      |
+| 3     | 0.89      | 0.75   | 0.81     | 32      |
 
-**Macro Avg:** Precision: 0.88, Recall: 0.86, F1-Score: 0.86
-**Weighted Avg:** Precision: 0.88, Recall: 0.86, F1-Score: 0.86
+**Overall Metrics**
+
+- Accuracy: 0.69  
+- Macro Average: Precision = 0.70, Recall = 0.69, F1-Score = 0.69  
+- Weighted Average: Precision = 0.70, Recall = 0.69, F1-Score = 0.69  
 
 **Confusion Matrix/ Heatmap**
 ![Confusion Matrix](attachments/confusion-matrix.png)
+**Accuracy vs. Epoch**
+![Accuracy vs. Epoch](attachments/accuracy.png)
 
 ## 💡 Insights & Recommendations
 
