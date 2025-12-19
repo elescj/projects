@@ -23,15 +23,11 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset used in this project consists of facial images labeled with four emotion categories: **happy, sad, neutral, and surprise**. Images are provided in varying lighting conditions, poses, and facial expressions, making the classification task realistic and challenging.
+The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
 
-- **Number of classes:** 4 (happy, sad, neutral, surprise)  
-- **Image size:** 48x48 pixels  
-- **Color modes:** Grayscale and RGB  
-- **Splits:** Training, validation, and test sets  
-- **Purpose:** To train CNN models to recognize facial expressions and evaluate the impact of image color representation (grayscale vs RGB) and transfer learning.
-
-The dataset is preprocessed using **image rescaling, horizontal flipping, brightness adjustment, and shear transformations** to augment the training data and improve model generalization.
+- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
+- Each folder has **two subfolders**, each representing a **health condition of the cell**.
+- All images are in **PNG format**.
 
 > **Note:** The original dataset exceeds GitHub's upload limit.  
 > To access the data, please contact me via my portfolio website:  
@@ -45,16 +41,21 @@ The following steps outline the end-to-end process used in this project:
 
 1. **Data (image) Processing**
    - **Data Retrieval and Preparation**: Extract data from the ZIP file and prepare the training and test data.
-   - **Data Visualization**: Randomly choose a few images and observe their potential features that may be extracted in CNN.
+   - **Data Demonstration**: Randomly choose a few images and observe their potential features that may be extracted in CNN; demonstrate the class distribution.
    - **Data Preprocessing**: Label the data, split into training and test set, normalize the images, and encode the categories.
 
 2. **Modelling**
-   - Build four models with different neuron structures for comparison.
+   - Compare basic neural network and CNN models' performance applied in greyscale and RBG.
+   - Build two transfer learning models for comparison.
    - The models include an initial base model, refined model with more neuron layers and augmented data.
-   - For each model, build the architecture, training this model, and evaluate the model accuracy and confusion matrix.
+   - For each model, build the architecture, training this model, and evaluate the model accuracy.
 
 3. **Transfer Learning**
-   - Build a transfer learning model with pre-trained VGG16 model.
+   - Build two transfer learning models (VGG16 and ResNet V2 models).
+   - For each model, build the architecture, training this model, and evaluate the model accuracy.
+
+4. **Final Model**
+   - Apply the best model on the dataset.
    - Evaluate the model accuracy and confusion matrix.
 
 ## 📝 Results
