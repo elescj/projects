@@ -23,11 +23,15 @@ The pipeline includes:
 
 ## 📊 Dataset
 
-The dataset for this project is sourced from the **MIT Applied Data Science Program** and is organized as follows:
+The dataset used in this project consists of facial images labeled with four emotion categories: **happy, sad, neutral, and surprise**. Images are provided in varying lighting conditions, poses, and facial expressions, making the classification task realistic and challenging.
 
-- The dataset is provided in **ZIP format**, containing **training** and **test** folders.
-- Each folder has **two subfolders**, each representing a **health condition of the cell**.
-- All images are in **PNG format**.
+- **Number of classes:** 4 (happy, sad, neutral, surprise)  
+- **Image size:** 48x48 pixels  
+- **Color modes:** Grayscale and RGB  
+- **Splits:** Training, validation, and test sets  
+- **Purpose:** To train CNN models to recognize facial expressions and evaluate the impact of image color representation (grayscale vs RGB) and transfer learning.
+
+The dataset is preprocessed using **image rescaling, horizontal flipping, brightness adjustment, and shear transformations** to augment the training data and improve model generalization.
 
 > **Note:** The original dataset exceeds GitHub's upload limit.  
 > To access the data, please contact me via my portfolio website:  
