@@ -108,11 +108,25 @@ The models were evaluated on the test set using **accuracy, loss, and confusion 
 ## 💡 Insights & Recommendations
 
 ### Insights
-- The CNN model achieved an overall accuracy of 86% on the test set.
-- The model demonstrated high sensitivity for parasitized cells, correctly identifying 99% of malaria-infected images.
-- The main source of error was the misclassification of uninfected cells as parasitized, accounting for 27% of uninfected images.
-- Data visualization and analysis showed that the dataset is balanced, and normalization significantly helped in stabilizing the training process.
-- Using transfer learning with VGG16 improved feature extraction and reduced training time compared to training a CNN from scratch.
+**Impact of Input Color Mode**
+- Models trained on **grayscale images** generally performed better than those trained on **RGB images** for this dataset.  
+- **Base CNN models** achieved ~68–76% accuracy on grayscale but dropped significantly (~29–66%) on RGB, suggesting that additional color channels did not improve feature learning for facial emotion detection.
+
+**Model Complexity vs Performance**
+- Increasing model complexity (Model 3 – 5 CNN blocks) did **not guarantee better performance**.  
+- Overly deep architectures showed **overfitting** or unstable training, especially on small datasets or with grayscale inputs.  
+- Simpler models (Model 1 and Model 2) with appropriate regularization and batch normalization were more **stable** and often outperformed complex CNNs.
+
+**Transfer Learning Architectures**
+- Pre-trained models like **VGG16, ResNet50, EfficientNet** did not yield satisfactory performance (~25% accuracy) on this dataset.  
+- Possible reasons:  
+  - These models expect 3-channel RGB images, making them incompatible with grayscale inputs without modification.  
+  - Small dataset limits fine-tuning capability.  
+  - Domain mismatch: pre-trained weights were trained on general images (ImageNet), which may not capture subtle facial emotion features.
+
+**Observations from Confusion Matrices**
+- Certain classes (e.g., **“happy”** or **“surprise”**) were predicted better than others, indicating **class-specific bias**.  
+- Models struggle with subtle emotions like **“neutral”** or **“sad”**, which may have overlapping facial features.
 
 ### Implications
 - The model can assist medical practitioners in automated screening of malaria, potentially reducing human error and speeding up diagnosis.
