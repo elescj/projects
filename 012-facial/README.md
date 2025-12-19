@@ -1,6 +1,6 @@
-# 🦟 Automated Malaria Detection Using CNNs and Transfer Learning
+# 😀 Facial Emotion Recognition: CNNs and Transfer Learning for Grayscale vs RGB
 This project builds and compares four convolutional neural net work (CNN) models to classify blood cell (uninfected/ parasitized) using microscopic images. Transfer learning is then applied to make predictions (pre-trained VGG16 model) on unseen images, demonstrating the effectiveness of CNNs for real-world computer vision.
-![Graphical Summary](attachments/malaria.png)
+![Graphical Summary](attachments/facial.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
