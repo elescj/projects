@@ -60,7 +60,18 @@ The following steps outline the end-to-end process used in this project:
 
 ## 📝 Results
 
-The pre-trained model were evaluated on **test** datasets using standard classification metrics.  
+The models were evaluated on the test set using **accuracy, loss, and confusion matrices**. Both grayscale and RGB images were compared across multiple CNN architectures and transfer learning approaches. A quick overview at different models' accuracy.
+
+| Model / Technique           | Input Mode | Accuracy | Remarks                                               |
+|-----------------------------|------------|---------|------------------------------------------------------|
+| Base CNN (Model 1)          | Grayscale  | 0.68    | Simple, stable, performs better on grayscale        |
+| Base CNN (Model 1)          | RGB        | 0.66    | Slightly worse, additional channels not useful      |
+| Advanced CNN (Model 2)      | Grayscale  | 0.76    | Best performance among CNNs, suitable for grayscale|
+| Advanced CNN (Model 2)      | RGB        | 0.30    | RGB caused significant drop; model overfits         |
+| Complex CNN (Model 3)       | Grayscale  | 0.50    | Overly deep, moderate performance, potential overfitting |
+| VGG16 Transfer Learning     | RGB        | 0.25    | Poor performance, pre-trained features not compatible |
+| ResNet50 TL                 | RGB        | 0.25    | Similar to VGG16, unsuitable for small emotion dataset |
+| EfficientNet TL             | RGB        | 0.25    | Small dataset and grayscale features not captured   |
 
 - **Precision (1)**: When the model predicts a conversion, how often it is correct.  
 - **Recall (1)**: Out of all actual conversions, how many were correctly identified.  
