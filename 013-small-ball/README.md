@@ -13,112 +13,94 @@ This project applies Linear Regression, Lasso Regression, Decision Tree, and Ran
 - [How to Run](#how-to-run)
 
 ## 🧠 Overview
-This project implements a supervised machine learning pipeline to predict used car prices in India, leveraging multiple regression methods to model the relationship between price and features such as car name, location, and manufacturing year. The pipeline includes data cleaning, feature engineering, model training, evaluation, and insights extraction to support pricing decisions in the used car market.
+This project implements a supervised machine learning pipeline to predict an NBA team's winning percentage, leveraging multiple regression methods to model the relationship between win/lose rate and features such as possession, points per possession, and shot types. The pipeline includes data cleaning, feature engineering, model training, evaluation, and insights extraction to build a successful team.
 
 ## 📊 Dataset
-This dataset, originally provided in the Applied Data Science Program by MIT, is a CSV file with 7,253 rows and 14 columns, where each row represents a used car sold in India, including details such as car model, location, year of manufacture, mileage, engine capacity, and selling price.
+These datasets, originally provided on Basketball-Reference.com, is a set of four basketball team season statistics in 15 years, where each row represents a team's season statistics, including details such as minutes played, points, rebounds, and assists.
 
-Each record includes **15 input features** describing vehicle information, and one **target variable**: price of the used car (in INR 100,000).
+After data preprocessing, the table set is merged into one operatable dataset. Each record includes **25 input features** describing team performance, and one **target variable**: Win/Lose Rate.
 
 Detailed feature descriptions are listed in the table below:
-| Column | Description |
-|--------|-------------|
-| **S.No.** | Serial Number |
-| **Name** | Car name, including brand and model |
-| **Location** | City where the car is available |
-| **Year** | Manufacturing year |
-| **Kilometers_Driven** | Total kilometers driven by previous owner(s) |
-| **Fuel_Type** | Fuel type (Petrol, Diesel, Electric, CNG, LPG) |
-| **Transmission** | Transmission type (Automatic/Manual) |
-| **Owner_Type** | Type of ownership (First, Second, etc.) |
-| **Mileage** | Mileage in kmpl or km/kg |
-| **Engine** | Engine displacement in CC |
-| **Power** | Engine power in BHP |
-| **Seats** | Number of seats |
-| **New_Price** | Price of a new car of the same model (in INR 100,000) |
-| **Price** | Price of the used car (in INR 100,000) (**Target Variable**) |
+## Data Dictionary
+| Variable | Description |
+|----------|-------------|
+| Rk       | Team rank in the season |
+| Team     | Name of the NBA team |
+| G        | Games played |
+| MP       | Minutes played |
+| FG       | Field goals made |
+| FGA      | Field goals attempted |
+| FG%      | Field goal percentage (FG ÷ FGA) |
+| 3P       | Three-point field goals made |
+| 3PA      | Three-point field goals attempted |
+| 3P%      | Three-point field goal percentage (3P ÷ 3PA) |
+| 2P       | Two-point field goals made |
+| 2PA      | Two-point field goals attempted |
+| 2P%      | Two-point field goal percentage (2P ÷ 2PA) |
+| FT       | Free throws made |
+| FTA      | Free throws attempted |
+| FT%      | Free throw percentage (FT ÷ FTA) |
+| ORB      | Offensive rebounds |
+| DRB      | Defensive rebounds |
+| TRB      | Total rebounds (ORB + DRB) |
+| AST      | Assists |
+| STL      | Steals |
+| BLK      | Blocks |
+| TOV      | Turnovers |
+| PF       | Personal fouls |
+| PTS      | Total points scored |
 
 ## ❓ Problem Statement
-Automobiles are essential in modern society, enabling daily commutes, logistics, and long-distance travel. As the population grows and urbanization accelerates, the demand for personal vehicles can no longer be met solely by the new car market. Used cars, offering practical value at lower costs, have become a popular choice for many buyers.
+This project aims to uncover the winning formula of the small-ball era by analyzing regular-season team-level statistics from 2010 to 2025. Rather than focusing on individual players or limited head-to-head matchups, we use season-level metrics to identify the key factors driving strong win–loss records.  
 
-However, pricing used cars is challenging. Even well-maintained cars depreciate over time due to factors such as mileage, brand, model, year, and market demand. Determining the right price for each used car typically requires thorough inspection and market analysis, which is time-consuming and costly. Inaccurate pricing risks eroding customer trust and impacting sales.
-
-Thus, there is a critical need for an **accurate, scalable, and low-maintenance pricing mechanism** to support fair pricing in the used car market, benefiting both sellers and buyers.
+Regular-season data provides a stable and efficient measure of team performance, capturing the cumulative impact of opponents and game contexts. Our goal is to understand which scoring and efficiency metrics most influence winning, offering actionable insights for team building and roster construction in the small-ball era.
 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
 
-1. **Initial Data Treatment**
+1. **Data Pipeline**
+   - **Data Preprocessing**: Construct an operatable dataset from the original URL.
    - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
-   - Clarified **action items for EDA** based on initial observations.
-   
-3. **Exploratory Data Analysis (EDA)**
-   - **Univariate Analysis**: Examined the distribution of numerical and categorical variables using histograms and descriptive statistics.
-   - **Bivariate Analysis**: Explored relationships between independent variables and the target (`Price`) using scatter plots and correlation heatmaps to identify potential multicollinearity and feature relevance.
-   - **Feature Engineering**: Transformed vague or inconsistent variables into more meaningful, usable forms for modeling (e.g., extracting car brand, creating `car_age`).
-   - Continued **data treatment**:
-     - Dropped purely cardinal or irrelevant variables.
-     - Imputed missing values using median, mean, or model-based methods to ensure a clean dataset for modeling.
+   - **Exploratory Data Analysis (EDA)**: **Univariate Analysis** and **Bivariate Analysis** explored the data distribution and variable relations.
+   - **Feature Engineering**: Transformed vague or inconsistent variables into more meaningful, usable forms for modeling (e.g., number of posession, creating `POS`).
 
-4. **Model Building**
-   - Performed **Linear Regression, Ridge Regression, Decision Tree, Random Forest, and KNN Regression** separately to forecast used car prices.
-   - Tuned **hyperparameters** for each model to enhance predictive performance and reduce overfitting.
-   - Compared **R² Scores and RMSE** across all models to evaluate and select the best-performing method for price prediction.
+2. **Modelling**
+   - Performed **Linear Regression, Lasso Regression, Decision Tree, and Random Forest** separately to forecast used car prices.
+   - Compared **MSE, RMSE, MAE, R²** across all models to evaluate and select the best-performing method for price prediction.
 
 ## 📈 Results
 
-### 💯 Model Performance Metrics
+| Model              | MSE       | RMSE      | MAE       | R²       |
+|-------------------|-----------|-----------|-----------|----------|
+| Lasso             | 0.000767  | 0.027695  | 0.021497  | 0.970058 |
+| Random Forest     | 0.001042  | 0.032276  | 0.025863  | 0.959331 |
+| Linear Regression | 0.001085  | 0.032940  | 0.025275  | 0.957643 |
+| Decision Tree     | 0.001237  | 0.035174  | 0.028044  | 0.951701 |
 
-| Model               | Train R²  | Test R²  | Train RMSE | Test RMSE |
-|----------------------|-----------|----------|-------------|------------|
-| Linear Regression    | 0.9835    | 0.8197   | 1.4346      | 4.7319     |
-| Ridge                | 0.9666    | 0.9098   | 2.0432      | 3.3478     |
-| Decision Tree        | 0.9597    | 0.8489   | 2.2437      | 4.3319     |
-| Random Forest        | 0.9799    | 0.8726   | 1.5830      | 3.9787     |
-| KNN                  | 0.9999    | 0.8316   | 0.0203      | 4.5729     |
-
-**Ridge Regression achieves the highest Test R² (`0.910`) and the lowest Test RMSE (`3.35`)**, indicating **best generalization** and **predictive accuracy** on unseen data.
-
----
-
-### 🔢 Model Coefficient
-
-| Parameter | Default | Description |
-|---|---|---|
-| **`alpha`** | `1.0` | Regularization strength; higher = more regularization, helping reduce overfitting. |
-| **`fit_intercept`** | `True` | Whether to calculate the intercept (`b0`). |
-| **`normalize`** | *deprecated* | Previously normalized features automatically; now use `StandardScaler` explicitly. |
-| **`solver`** | `'auto'` | Algorithm for optimization. Options include `'auto'`, `'svd'`, `'cholesky'`, `'lsqr'`, `'sparse_cg'`, `'sag'`, `'saga'`, `'lbfgs'`. |
-| **`max_iter`** | `None` | Maximum iterations for solvers that support it (`'sag'`, `'saga'`). |
-| **`tol`** | `1e-3` | Precision tolerance for convergence. |
-| **`random_state`** | `None` | Ensures reproducibility for stochastic solvers (`'sag'`, `'saga'`). |
-| **`copy_X`** | `True` | Whether to copy `X` or overwrite it. |
-| **`positive`** | `False` | Forces coefficients to remain positive if set to `True`. |
+**Lasso Regression achieves the highest Test R² (`0.970`) and the lowest Test MSE, RMSE, and MAE**, indicating **best generalization** and **predictive accuracy** on unseen data.
 
 ## 💡 Insights & Recommendations
 
-- Builds **trust** with fair, data-backed pricing.  
-- **Saves time** by reducing manual pricing work.  
-- **Boosts profits** with data-aligned buying and selling.  
-- Enables **targeted marketing** using high-value features.
+- Generating high-value three-point attempt.  
+- Attacking the basket to pressure interior defenses.
+- Defending the three-point line aggressively.
+- Forcing opponents into lower-efficiency mid-range shots.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
 - **Pandas** – Data manipulation and analysis
+- **SciPy** – Statistical tests and probability distributions
 - **NumPy** – Numerical computations
 - **Matplotlib & Seaborn** – Data visualization
 - **Scikit-learn** – Model training and evaluation
-- **Statsmodels** – Statistical modeling (OLS regression, VIF)
-- **SciPy** – Statistical tests and probability distributions
-- **Warnings** – For suppressing non-critical output
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/004-used-cars-lr.git
-cd 004-used-cars-lr
+git clone https://github.com/elescj/013-small-ball-lr.git
+cd 013-small-ball-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
