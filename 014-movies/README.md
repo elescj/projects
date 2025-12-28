@@ -1,6 +1,6 @@
-# 🏀 Winning in the Small Ball Era (2010–2025): a Regression Analysis
-This project applies Linear Regression, Lasso Regression, Decision Tree, and Random Forest to forecast winning percentage of an NBA team, providing actionable GM recommendations using the best-performing regression model.
-![Graphical Summary](attachments/small-ball.png)
+# 🎬 Movie Recommendation Systems: A Comparative Study
+This project implements four recommendation system models to predict users’ movie preferences. It evaluates model performance using metrics like Precision@K, Recall@K, and F₁-score to generate personalized top-N recommendations.
+![Graphical Summary](attachments/movies.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
