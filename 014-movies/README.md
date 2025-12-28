@@ -111,17 +111,17 @@ The recommendation models were evaluated using **Precision@K, Recall@K, F₁-sco
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
 - **Pandas** – Data manipulation and analysis
-- **SciPy** – Statistical tests and probability distributions
 - **NumPy** – Numerical computations
-- **Matplotlib & Seaborn** – Data visualization
-- **Scikit-learn** – Model training and evaluation
+- **Matplotlib** – Data visualization
+- **Surprise** - Recommendstion System Library
+- **Scikit-learn** – Machine Learning tools for metrics and evaluation
 
 <a id="how-to-run"></a>
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/013-small-ball-lr.git
-cd 013-small-ball-lr
+git clone https://github.com/elescj/014-movies-lr.git
+cd 014-movies-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
