@@ -26,9 +26,9 @@ This dataset was originally provided as part of the **Applied Data Science Progr
 | timestamp  | Time when the rating was recorded   |
 
 ## ❓ Problem Statement
-This project aims to uncover the winning formula of the small-ball era by analyzing regular-season team-level statistics from 2010 to 2025. Rather than focusing on individual players or limited head-to-head matchups, we use season-level metrics to identify the key factors driving strong win–loss records.  
+Movie streaming platforms offer thousands of titles, but users often struggle to discover movies that match their preferences. Traditional word-of-mouth recommendations are limited by social connections and subjective opinions. 
 
-Regular-season data provides a stable and efficient measure of team performance, capturing the cumulative impact of opponents and game contexts. Our goal is to understand which scoring and efficiency metrics most influence winning, offering actionable insights for team building and roster construction in the small-ball era.
+The goal of this project is to **build a recommendation system** that can predict a user's movie preferences and provide **personalized top-N recommendations**. This involves implementing and comparing multiple approaches, including **rank-based methods, collaborative filtering (user-user and item-item), and model-based matrix factorization**, while evaluating their performance using metrics like **Precision@K, Recall@K, F₁-score, and RMSE**.
 
 ## 🔎 Methodology
 The following steps outline the end-to-end process used in this project:
