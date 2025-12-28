@@ -31,17 +31,34 @@ Movie streaming platforms offer thousands of titles, but users often struggle to
 The goal of this project is to **build a recommendation system** that can predict a user's movie preferences and provide **personalized top-N recommendations**. This involves implementing and comparing multiple approaches, including **rank-based methods, collaborative filtering (user-user and item-item), and model-based matrix factorization**, while evaluating their performance using metrics like **Precision@K, Recall@K, F₁-score, and RMSE**.
 
 ## 🔎 Methodology
-The following steps outline the end-to-end process used in this project:
+### Methodology
 
-1. **Data Pipeline**
-   - **Data Preprocessing**: Construct an operatable dataset from the original URL.
-   - **Data Overview**: Reviewed to understand data types, check for duplicates, and assess missing values.
-   - **Exploratory Data Analysis (EDA)**: **Univariate Analysis** and **Bivariate Analysis** explored the data distribution and variable relations.
-   - **Feature Engineering**: Transformed vague or inconsistent variables into more meaningful, usable forms for modeling (e.g., number of posession, creating `POS`).
+The recommendation system development followed an **end-to-end workflow** from data preprocessing to model evaluation and delivery:
 
-2. **Modelling**
-   - Performed **Linear Regression, Lasso Regression, Decision Tree, and Random Forest** separately to forecast used car prices.
-   - Compared **MSE, RMSE, MAE, R²** across all models to evaluate and select the best-performing method for price prediction.
+1. **Data Preparation**  
+   - Loaded the dataset containing user–movie ratings.  
+   - Performed basic exploratory data analysis to understand rating distributions, user activity, and movie popularity.  
+   - Created a **user–item interaction matrix** for collaborative filtering models.
+
+2. **Model Implementation**  
+   - **Rank-based recommendation:** Predicted ratings based on average movie ratings.  
+   - **User–User collaborative filtering:** Estimated ratings using similarity between users.  
+   - **Item–Item collaborative filtering:** Estimated ratings using similarity between items.  
+   - **Model-based collaborative filtering (SVD):** Factorized the user–item matrix to capture latent features.
+
+3. **Model Evaluation**  
+   - Split data into training and test sets.  
+   - Evaluated models using **Precision@K, Recall@K, F₁-score, and RMSE** to measure recommendation accuracy and coverage.  
+
+4. **Hyperparameter Optimization**  
+   - Applied **grid search cross-validation** to identify optimal parameters for similarity-based and SVD models.  
+   - Selected the best-performing models for generating final recommendations.
+
+5. **Recommendation Delivery**  
+   - Generated **top-N personalized movie recommendations** for each user based on predicted ratings.  
+   - Optionally, ranked recommendations using **corrected ratings** that account for both predicted ratings and movie popularity.
+
+This methodology ensures a **robust, end-to-end pipeline** for building and evaluating movie recommendation systems.
 
 ## 📈 Results
 
