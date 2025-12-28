@@ -13,42 +13,17 @@ This project implements four recommendation system models to predict users’ mo
 - [How to Run](#how-to-run)
 
 ## 🧠 Overview
-This project implements a supervised machine learning pipeline to predict an NBA team's winning percentage, leveraging multiple regression methods to model the relationship between win/lose rate and features such as possession, points per possession, and shot types. The pipeline includes data cleaning, feature engineering, model training, evaluation, and insights extraction to build a successful team.
+This project implements four recommendation approaches: rank-based (average ratings), user–user similarity, item–item similarity, and model-based collaborative filtering (matrix factorization). Model performance is evaluated using Precision@K, Recall@K, and F₁-score, enabling the generation of personalized top-N movie recommendations.
 
 ## 📊 Dataset
-These datasets, originally provided on Basketball-Reference.com, is a set of four basketball team season statistics in 15 years, where each row represents a team's season statistics, including details such as minutes played, points, rebounds, and assists.
+This dataset was originally provided as part of the **Applied Data Science Program by MIT**. It is a **100,836 × 4 CSV file**, where each row represents a user’s rating of a movie. Each record contains four features describing **which user**, **which movie**, **the rating**, and **when the rating was made**.  
 
-After data preprocessing, the table set is merged into one operatable dataset. Each record includes **25 input features** describing team performance, and one **target variable**: Win/Lose Rate.
-
-Detailed feature descriptions are listed in the table below:
-## Data Dictionary
-| Variable | Description |
-|----------|-------------|
-| Rk       | Team rank in the season |
-| Team     | Name of the NBA team |
-| G        | Games played |
-| MP       | Minutes played |
-| FG       | Field goals made |
-| FGA      | Field goals attempted |
-| FG%      | Field goal percentage (FG ÷ FGA) |
-| 3P       | Three-point field goals made |
-| 3PA      | Three-point field goals attempted |
-| 3P%      | Three-point field goal percentage (3P ÷ 3PA) |
-| 2P       | Two-point field goals made |
-| 2PA      | Two-point field goals attempted |
-| 2P%      | Two-point field goal percentage (2P ÷ 2PA) |
-| FT       | Free throws made |
-| FTA      | Free throws attempted |
-| FT%      | Free throw percentage (FT ÷ FTA) |
-| ORB      | Offensive rebounds |
-| DRB      | Defensive rebounds |
-| TRB      | Total rebounds (ORB + DRB) |
-| AST      | Assists |
-| STL      | Steals |
-| BLK      | Blocks |
-| TOV      | Turnovers |
-| PF       | Personal fouls |
-| PTS      | Total points scored |
+| Variable   | Description                         |
+|------------|-------------------------------------|
+| userId     | Unique identifier for each user     |
+| movieId    | Unique identifier for each movie    |
+| rating     | Rating given by the user to the movie |
+| timestamp  | Time when the rating was recorded   |
 
 ## ❓ Problem Statement
 This project aims to uncover the winning formula of the small-ball era by analyzing regular-season team-level statistics from 2010 to 2025. Rather than focusing on individual players or limited head-to-head matchups, we use season-level metrics to identify the key factors driving strong win–loss records.  
