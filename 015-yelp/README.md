@@ -1,5 +1,5 @@
 # 🍽️ Yelp Restaurant Recommendation System: A Comparative Study
-This project implements four recommendation system models to predict users’ movie preferences. It evaluates model performance using metrics like Precision@K, Recall@K, and F₁-score to generate personalized top-N recommendations.
+A comparative study of rank-based, user-user, item-item, and matrix factorization recommendation algorithms applied to Yelp restaurant review data.
 ![Graphical Summary](attachments/yelp.png)
 
 ## 📂 Table of Contents
@@ -13,17 +13,18 @@ This project implements four recommendation system models to predict users’ mo
 - [How to Run](#how-to-run)
 
 ## 🧠 Overview
-This project implements four recommendation approaches: rank-based (average ratings), user–user similarity, item–item similarity, and model-based collaborative filtering (matrix factorization). Model performance is evaluated using Precision@K, Recall@K, and F₁-score, enabling the generation of personalized top-N movie recommendations.
+This project implements multiple restaurant recommendation approaches, including rank-based (average ratings), user–user similarity, item–item similarity, and model-based collaborative filtering using matrix factorization. Model performance is evaluated using Precision@K, Recall@K, and F₁-score, enabling the generation of personalized top-N restaurant recommendations.
 
 ## 📊 Dataset
-This dataset was originally provided as part of the **Applied Data Science Program by MIT**. It is a **100,836 × 4 CSV file**, where each row represents a user’s rating of a movie. Each record contains four features describing **which user**, **which movie**, **the rating**, and **when the rating was made**.  
+This dataset was originally provided as part of the **Yelp Dataset Challenge**. It consists of a large collection of user reviews and business information, where each row represents a user’s rating of a restaurant. For this project, a **subset of the original dataset** was used due to hardware constraints.
 
-| Variable   | Description                         |
-|------------|-------------------------------------|
-| userId     | Unique identifier for each user     |
-| movieId    | Unique identifier for each movie    |
-| rating     | Rating given by the user to the movie |
-| timestamp  | Time when the rating was recorded   |
+Each record contains features describing **which user**, **which restaurant**, and **the rating** provided by the user.
+
+| Variable      | Description                                   |
+|---------------|-----------------------------------------------|
+| user_id       | Unique identifier for each user               |
+| business_id   | Unique identifier for each restaurant         |
+| stars         | Rating given by the user (1–5 scale)           |
 
 ## ❓ Problem Statement
 Movie streaming platforms offer thousands of titles, but users often struggle to discover movies that match their preferences. Traditional word-of-mouth recommendations are limited by social connections and subjective opinions. 
