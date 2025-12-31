@@ -26,6 +26,10 @@ Each record contains features describing **which user**, **which restaurant**, a
 | business_id   | Unique identifier for each restaurant         |
 | stars         | Rating given by the user (1–5 scale)           |
 
+> **Note:** The original dataset exceeds GitHub's upload limit.  
+> To access the data, please contact me via my portfolio website:  
+> [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
+
 ## ❓ Problem Statement
 Movie streaming platforms offer thousands of titles, but users often struggle to discover movies that match their preferences. Traditional word-of-mouth recommendations are limited by social connections and subjective opinions. 
 
