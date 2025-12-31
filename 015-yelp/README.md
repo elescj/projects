@@ -118,7 +118,7 @@ The recommendation models were evaluated using **Precision@K, Recall@K, F₁-sco
 - **Python** – General purpose programming
 - **Pandas** – Data manipulation and analysis
 - **NumPy** – Numerical computations
-- **Matplotlib & seaborn** – Data visualization
+- **Matplotlib & Seaborn** – Data visualization
 - **Surprise** - Recommendstion System Library
 - **Scikit-learn** – Machine Learning tools for metrics and evaluation
 
