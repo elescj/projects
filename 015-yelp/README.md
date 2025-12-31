@@ -102,23 +102,23 @@ The recommendation models were evaluated using **Precision@K, Recall@K, F₁-sco
 ## 💡 Insights & Recommendations
 
 **Insights:**
-- Collaborative filtering models (both user-user and item-item) consistently outperform rank-based methods, highlighting the importance of leveraging user or item similarities.  
+- Collaborative filtering models (both user-user and item-item) consistently outperform rank-based methods, highlighting the importance of leveraging user or restaurant similarities.  
 - User–User collaborative filtering achieved the highest F₁-score, indicating strong alignment between predicted and actual user preferences.  
-- Matrix factorization (SVD) effectively captures latent features, providing a scalable solution for large datasets with comparable performance to similarity-based methods.  
-- Movies with higher rating counts tend to stabilize predictions, emphasizing the role of popularity in recommendation accuracy.  
+- Matrix factorization effectively captures latent features, providing a scalable solution for large restaurant datasets with performance comparable to similarity-based methods.  
+- Restaurants with higher rating counts tend to stabilize predictions, emphasizing the role of popularity in recommendation accuracy.  
 
 **Recommendations:**
 - Deploy **User–User collaborative filtering** as the primary recommendation engine for this dataset to maximize user satisfaction.  
-- Consider **hybrid recommendation systems** combining collaborative filtering with rank-based or content-based methods to further improve recommendations.  
+- Consider **hybrid recommendation systems** combining collaborative filtering with rank-based methods to further improve recommendations.  
 - Continuously update models with **new user ratings** to maintain accuracy and relevance over time.  
-- Explore additional **hyperparameter tuning** and feature engineering (e.g., temporal trends or genre preferences) to enhance model performance.
+- Explore additional **hyperparameter tuning** and feature engineering (e.g., temporal trends, cuisine types, or location-based preferences) to enhance model performance.
 
 <a id="technologies-used"></a>
 ## ⚙️ Technologies Used
 - **Python** – General purpose programming
 - **Pandas** – Data manipulation and analysis
 - **NumPy** – Numerical computations
-- **Matplotlib** – Data visualization
+- **Matplotlib & seaborn** – Data visualization
 - **Surprise** - Recommendstion System Library
 - **Scikit-learn** – Machine Learning tools for metrics and evaluation
 
@@ -126,8 +126,8 @@ The recommendation models were evaluated using **Precision@K, Recall@K, F₁-sco
 ## ▶️ How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/elescj/014-movies-lr.git
-cd 014-movies-lr
+git clone https://github.com/elescj/015-yelp-lr.git
+cd 015-yelp-lr
 
 # (Optional) Create a virtual environment
 python -m venv venv
