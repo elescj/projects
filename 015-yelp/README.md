@@ -31,9 +31,10 @@ Each record contains features describing **which user**, **which restaurant**, a
 > [Contact Charles Jiao](https://charles-jiao.netlify.app/contact)
 
 ## ❓ Problem Statement
-Movie streaming platforms offer thousands of titles, but users often struggle to discover movies that match their preferences. Traditional word-of-mouth recommendations are limited by social connections and subjective opinions. 
+Restaurant discovery platforms list thousands of dining options, making it challenging for users to find restaurants that match their tastes and preferences. Traditional recommendations, such as word-of-mouth or online reviews, are often limited by personal networks and information overload.
 
-The goal of this project is to **build a recommendation system** that can predict a user's movie preferences and provide **personalized top-N recommendations**. This involves implementing and comparing multiple approaches, including **rank-based methods, collaborative filtering (user-user and item-item), and model-based matrix factorization**, while evaluating their performance using metrics like **Precision@K, Recall@K, F₁-score, and RMSE**.
+The goal of this project is to **build a recommendation system** that can predict a user’s restaurant preferences and provide **personalized top-N restaurant recommendations**. This is achieved by implementing and comparing multiple approaches, including **rank-based methods, collaborative filtering (user–user and item–item), and model-based matrix factorization**, and evaluating their performance using **Precision@K, Recall@K, F₁-score, and RMSE**.
+
 
 ## 🔎 Methodology
 The recommendation system development followed an **end-to-end workflow** from data preprocessing to model evaluation and delivery:
