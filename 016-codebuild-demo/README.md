@@ -1,6 +1,6 @@
 # ☁️ Python APP AWS CodeBuild Demo
 
-A comparative study of rank-based, user-user, item-item, and matrix factorization recommendation algorithms applied to Yelp restaurant review data.
+A Python application demonstrating a GitHub-integrated AWS CodeBuild CI pipeline with automated builds, logging, and cost-conscious teardown.
 ![Graphical Summary](attachments/codebuild-demo.png)
 
 ## 📂 Table of Contents
