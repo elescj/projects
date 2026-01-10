@@ -18,6 +18,8 @@ This project demonstrates a Python application integrated with an AWS CodeBuild 
 
 ## 📊 CI/CD Pipeline Walkthrough
 
+This CI/CD pipeline automatically builds and tests a Python application whenever changes are pushed to GitHub, using AWS CodeBuild for isolated, reproducible builds.
+
 screenshots/
 ├── 01-overview.png
 ├── 02-buildspec.png
