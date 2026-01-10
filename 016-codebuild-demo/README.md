@@ -16,6 +16,7 @@ integration, and cost-aware cloud usage.
 - Builds triggered via GitHub webhook
 - Artifacts stored temporarily in S3
 
+<a id="ci-cd-pipeline"></a>
 ## CI/CD Pipeline Walkthrough
 screenshots/
 ├── 01-overview.png
