@@ -26,10 +26,10 @@ The source code is hosted on GitHub. A webhook triggers AWS CodeBuild whenever c
 ### Step 2: Build Environment Setup
 AWS CodeBuild provisions an ephemeral Linux build environment using a managed image with Python preinstalled. This ensures consistent builds across runs.
 
-### Build Specification (buildspec.yml)
+### Step 3: Build Specification (buildspec.yml)
 The pipeline behavior is defined in buildspec.yml, which specifies install, build, and test phases. Dependencies are installed, and application tests are executed automatically.
 
-📸 Screenshot: buildspec.yml snippet
+[View buildspec.yml](buildspec.yml)
 
 ### Step 4: Build Execution & Logs
 During execution, CodeBuild streams logs to CloudWatch, providing visibility into each phase of the pipeline and enabling rapid debugging.
