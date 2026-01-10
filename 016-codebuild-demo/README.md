@@ -28,7 +28,6 @@ AWS CodeBuild provisions an ephemeral Linux build environment using a managed im
 
 ### Step 3: Build Specification (buildspec.yml)
 The pipeline behavior is defined in buildspec.yml, which specifies install, build, and test phases. Dependencies are installed, and application tests are executed automatically.
-
 [View buildspec.yml](buildspec.yml)
 
 ### Step 4: Build Execution & Logs
