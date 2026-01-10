@@ -36,13 +36,6 @@ During execution, CodeBuild streams logs to CloudWatch, providing visibility int
 
 📸 Screenshot: Successful build logs
 
-screenshots/
-├── 01-overview.png
-├── 02-buildspec.png
-├── 03-success.png
-├── 04-logs.png
-└── 05-cleanup.png
-
 ### Step 5: Artifacts & Output (If Applicable)
 Build artifacts are temporarily stored in S3 for validation purposes. No persistent storage is retained after pipeline validation.
 
