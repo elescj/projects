@@ -2,7 +2,7 @@
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
-- [CI/CD Pipeline Walkthrough](#-ci/cd-pipeline-walkthrough)
+- [CI/CD Pipeline Walkthrough](#-cicd-pipeline-walkthrough)
 - [Cost Management](#-cost-management)
 
 ## Overview
