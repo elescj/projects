@@ -33,7 +33,12 @@ The pipeline behavior is defined in buildspec.yml, which specifies install, buil
 ### Step 4: Build Execution & Logs
 During execution, CodeBuild streams logs to CloudWatch, providing visibility into each phase of the pipeline and enabling rapid debugging.
 
-📸 Screenshot: Successful build logs
+#### Build history
+![Graphical Summary](attachments/builds.png)
+
+#### Build details
+![Graphical Summary](attachments/build1.png)
+![Graphical Summary](attachments/build2.png)
 
 ### Step 5: Artifacts & Output
 Build artifacts are temporarily stored in S3 for validation purposes. No persistent storage is retained after pipeline validation.
