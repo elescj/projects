@@ -1,5 +1,10 @@
 # ☁️ Python APP AWS CodeBuild Demo
 
+## 📂 Table of Contents
+- [Overview](#-overview)
+- [CI/CD Pipeline Walkthrough](#-ci/cd-pipeline-walkthrough)
+- [Cost Management](#-cost-management)
+
 ## Overview
 
 This project demonstrates a Python application integrated with an
@@ -10,9 +15,6 @@ integration, and cost-aware cloud usage.
 - Defined build and test phases using buildspec.yml
 - Builds triggered via GitHub webhook
 - Artifacts stored temporarily in S3
-
-⚠️ All AWS resources were deleted after validation to avoid ongoing costs.
-This repository contains full configuration and documentation to reproduce the pipeline.
 
 ## CI/CD Pipeline Walkthrough
 screenshots/
