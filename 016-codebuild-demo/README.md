@@ -6,7 +6,6 @@ A comparative study of rank-based, user-user, item-item, and matrix factorizatio
 ## 📂 Table of Contents
 - [Overview](#-overview)
 - [CI/CD Pipeline Walkthrough](#-cicd-pipeline-walkthrough)
-- [Problem Statement](#-problem-statement)
 - [Cost Management](#-cost-management)
 
 ## 🧠 Overview
