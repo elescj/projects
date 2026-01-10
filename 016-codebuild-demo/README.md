@@ -1,4 +1,10 @@
-## Python APP AWS CodeBuild Demo
+# ☁️ Python APP AWS CodeBuild Demo
+
+## Overview
+
+This project demonstrates a Python application integrated with an
+AWS CodeBuild CI pipeline. The focus is on build automation, GitHub
+integration, and cost-aware cloud usage.
 
 - Integrated GitHub repository with AWS CodeBuild
 - Defined build and test phases using buildspec.yml
