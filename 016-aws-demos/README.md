@@ -1,7 +1,6 @@
 # ☁️ Python APP AWS CodeBuild Demo
 
-A Python application demonstrating a GitHub-integrated AWS CodeBuild CI pipeline with automated builds, logging, and cost-conscious teardown.
-![Graphical Summary](attachments/codebuild-demo.png)
+![Graphical Summary](attachments/aws-demos.png)
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
