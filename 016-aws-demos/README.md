@@ -1,4 +1,4 @@
-# ☁️ AWS Demos on CI/CD and Cost Management
+# ☁️ AWS Demo on Deployment and Cost Management
 
 ![Graphical Summary](attachments/aws-demos.png)
 
