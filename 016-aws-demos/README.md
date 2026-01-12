@@ -10,12 +10,17 @@
 ## 🧠 Overview
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
+- CI/CD Pipeline Deployment
+- CloudWatch
+
+## 📊 CI/CD Pipeline Walkthrough
+
+This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
+
 - Integrated GitHub repository with AWS CodeBuild
 - Defined build and test phases using buildspec.yml
 - Builds triggered via GitHub webhook
 - Artifacts stored temporarily in S3
-
-## 📊 CI/CD Pipeline Walkthrough
 
 This CI/CD pipeline automatically builds and tests a Python application whenever changes are pushed to GitHub, using AWS CodeBuild for isolated, reproducible builds.
 
