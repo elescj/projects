@@ -6,6 +6,7 @@
 - [Overview](#-overview)
 - [CI/CD Pipeline Walkthrough](#-cicd-pipeline-walkthrough)
 - [Cost Management](#-cost-management)
+- [Summary](#-summary)
 
 ## 🧠 Overview
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
@@ -52,3 +53,5 @@ After validating the pipeline, all AWS resources (CodeBuild project, S3 bucket, 
 
 ## ❓ Cost Management
 Cost ManagementAll AWS resources (CodeBuild projects, S3 artifacts, IAM roles) were deleted after validation to ensure zero ongoing cost. This repository contains the full configuration to reproduce the pipeline.
+
+## 💡 Summary
