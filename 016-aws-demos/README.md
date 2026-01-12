@@ -1,4 +1,4 @@
-# ☁️ Python APP AWS CodeBuild Demo
+# ☁️ AWS Demos on CI/CD and Cost Management
 
 ![Graphical Summary](attachments/aws-demos.png)
 
@@ -9,10 +9,10 @@
 - [Summary](#-summary)
 
 ## 🧠 Overview
-This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
+This project demonstrates a set of Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
 - CI/CD Pipeline Deployment
-- CloudWatch
+- CloudWatch on EC2 instance
 
 ## 📊 CI/CD Pipeline Walkthrough
 
