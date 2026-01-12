@@ -9,12 +9,9 @@
 - [Summary](#-summary)
 
 ## 🧠 Overview
-This project demonstrates a set of Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
+This project demonstrates a set of Python application integrated with an AWS services. The focus is on manage data, maintain server, monitor performance, optimization cost management.
 
-- CI/CD Pipeline Deployment
-- CloudWatch on EC2 instance
-
-## 📊 CI/CD Pipeline Walkthrough
+## 🛠️ CI/CD Pipeline Walkthrough
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
