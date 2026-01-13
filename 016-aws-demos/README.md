@@ -46,4 +46,6 @@ After validating the pipeline, all AWS resources (CodeBuild project, S3 bucket, 
 ## 🚨 Cost Management
 Cost ManagementAll AWS resources (CodeBuild projects, S3 artifacts, IAM roles) were deleted after validation to ensure zero ongoing cost. This repository contains the full configuration to reproduce the pipeline.
 
+Observed alarm in INSUFFICIENT_DATA state. Verified metric availability, monitoring resolution, alarm period alignment, and sustained CPU load. After sufficient datapoints were published, alarm transitioned to OK and then ALARM as expected.
+
 ## 💡 Summary
