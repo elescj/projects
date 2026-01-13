@@ -25,9 +25,15 @@ Key highlights:
 <a id="cicd-pipeline-automated-deployment"></a>
 ## 🔁 CI/CD Pipeline & Automated Deployment
 
-This section demonstrates an end-to-end CI/CD pipeline for a Python application using GitHub and AWS CodeBuild. 
-Changes pushed to the GitHub repository automatically trigger builds, which include dependency installation, running tests, and artifact creation. 
-This workflow ensures reproducible, automated builds and provides full visibility into the build process.
+This section demonstrates an end-to-end CI/CD pipeline for a Python application using GitHub and AWS CodeBuild. Changes pushed to the GitHub repository automatically trigger builds, which include dependency installation, running tests, and artifact creation. This workflow ensures reproducible, automated builds and provides full visibility into the build process.
+
+Key highlights of this CI/CD pipeline include:
+- Automated build and test process triggered via **GitHub webhooks**
+- Use of **AWS CodeBuild** for isolated, consistent build environments
+- **Buildspec.yml** defines install, build, and test phases
+- **CloudWatch logs** provide detailed visibility into pipeline execution
+- Temporary storage of artifacts in S3, ensuring zero persistent cost
+The workflow follows a standard pattern: GitHub push → CodeBuild triggers → build and test → logs streamed to CloudWatch → artifacts temporarily stored in S3.
 
 <a id="cicd-pipeline-walkthrough"></a>
 ### 🛠️ CI/CD Pipeline Walkthrough
