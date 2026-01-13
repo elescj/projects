@@ -8,6 +8,12 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [Build Setup](#build-setup)
   - [Artifacts & Output]
 - [Cost Management](#-cost-management)
+  - [EC2 Instance Deployment]
+  - [Custom VPC & Networking Configuration]
+  - [CloudWatch Metrics Collection]
+  - [CloudWatch Logs]
+  - [CloudWatch Alarms & Alert Validation]
+  - [Cost Management & Resource Cleanup]
 - [Summary](#-summary)
 
 ## 🧠 Overview
@@ -86,8 +92,8 @@ Key points:
 ![Build Artifacts in S3](attachments/s3-artifacts.png)
 
 ## 🚨 Cost Management
-Cost ManagementAll AWS resources (CodeBuild projects, S3 artifacts, IAM roles) were deleted after validation to ensure zero ongoing cost. This repository contains the full configuration to reproduce the pipeline.
+This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
 
-Observed alarm in INSUFFICIENT_DATA state. Verified metric availability, monitoring resolution, alarm period alignment, and sustained CPU load. After sufficient datapoints were published, alarm transitioned to OK and then ALARM as expected.
+### EC2 Instance Deployment
 
 ## 💡 Summary
