@@ -4,6 +4,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
+- [CI/CD Pipeline & Automated Deployment](#cicd-pipeline-automated-deployment)
   - [CI/CD Pipeline Walkthrough](#cicd-pipeline-walkthrough)
 - [Cost Management](#-cost-management)
 - [Summary](#-summary)
@@ -19,6 +20,8 @@ Key highlights:
 - CloudWatch metrics, logs, and alarms for observability and alerting
 - Workload generation to validate monitoring and alarm triggers
 - Cost-conscious teardown of all AWS resources after testing
+
+## 🔁 CI/CD Pipeline & Automated Deployment
 
 <a id="cicd-pipeline-walkthrough"></a>
 ### 🛠️ CI/CD Pipeline Walkthrough
