@@ -21,6 +21,7 @@ Key highlights:
 - Workload generation to validate monitoring and alarm triggers
 - Cost-conscious teardown of all AWS resources after testing
 
+<a id="cicd-pipeline-automated-deployment"></a>
 ## 🔁 CI/CD Pipeline & Automated Deployment
 
 <a id="cicd-pipeline-walkthrough"></a>
