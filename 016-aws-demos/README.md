@@ -9,8 +9,8 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [Artifacts & Output](#artifacts--output)
 - [Cost Management](#-cost-management)
   - [EC2 Instance Deployment](#ec2-instance-deployment)
-  - [Custom VPC & Networking Configuration]
-  - [CloudWatch Metrics Collection]
+  - [Custom VPC & Networking Configuration](custom-vpc--networking-configuration)
+  - [CloudWatch Metrics Collection](cloudwatch-metrics-collection)
   - [CloudWatch Logs]
   - [CloudWatch Alarms & Alert Validation]
   - [Cost Management & Resource Cleanup]
@@ -95,5 +95,7 @@ Key points:
 This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
 
 ### EC2 Instance Deployment
+### Custom VPC & Networking Configuration
+###
 
 ## 💡 Summary
