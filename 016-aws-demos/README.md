@@ -8,7 +8,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [Build Setup](#build-setup)
   - [Artifacts & Output](#artifacts--output)
 - [Cost Management](#-cost-management)
-  - [EC2 Instance Deployment]
+  - [EC2 Instance Deployment](#-ec2-instance-deployment)
   - [Custom VPC & Networking Configuration]
   - [CloudWatch Metrics Collection]
   - [CloudWatch Logs]
