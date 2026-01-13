@@ -11,7 +11,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [EC2 Instance Deployment](#ec2-instance-deployment)
   - [Custom VPC & Networking Configuration](#custom-vpc--networking-configuration)
   - [CloudWatch Metrics Collection](#cloudwatch-metrics-collection)
-  - [CloudWatch Logs]
+  - [CloudWatch Logs](#cloudwatch-logs)
   - [CloudWatch Alarms & Alert Validation]
   - [Cost Management & Resource Cleanup]
 - [Summary](#-summary)
@@ -119,5 +119,18 @@ What this proves
 ![Custom VPC and Subnet](attachments/vpc-2.png)
 
 ### CloudWatch Metrics Collection
+
+Amazon CloudWatch is used to collect EC2 performance metrics, including CPU utilization. Metrics are visualized in near real time while the application workload is running.
+
+A workload-generating Python script is executed to intentionally increase CPU usage and validate metric collection behavior.
+
+What this proves
+- CloudWatch metrics configuration
+- Real-time observability
+- Validation through controlled workload generation
+
+![CloudWatch CPU Metrics](attachments/cloudwatch-metrics.png)
+
+### CloudWatch Logs
 
 ## 💡 Summary
