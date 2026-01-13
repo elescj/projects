@@ -96,6 +96,6 @@ This section demonstrates system observability and cost-aware monitoring using A
 
 ### EC2 Instance Deployment
 ### Custom VPC & Networking Configuration
-###
+### CloudWatch Metrics Collection
 
 ## 💡 Summary
