@@ -133,4 +133,13 @@ What this proves
 
 ### CloudWatch Logs
 
+Application logs are streamed to CloudWatch Logs, enabling centralized visibility into runtime behavior without directly accessing the EC2 instance.
+
+What this proves
+- Log group and log stream configuration
+- Centralized logging for cloud workloads
+- Debugging and observability best practices
+
+![CloudWatch Logs](attachments/cloudwatch-log.png)
+
 ## 💡 Summary
