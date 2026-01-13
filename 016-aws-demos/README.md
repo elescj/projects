@@ -6,8 +6,8 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
 - [Overview](#-overview)
 - [CI/CD Pipeline & Automated Deployment](#cicd-pipeline-automated-deployment)
   - [Source Control & Trigger]
-  - [Build Environment Setup](#build-environment-setup)
-  - [Build Specification (buildspec.yml)]
+  - [Build Setup](#build-setup)
+  - [Artifacts & Output]
 - [Cost Management](#-cost-management)
 - [Summary](#-summary)
 
@@ -38,7 +38,7 @@ Key highlights of this CI/CD pipeline include:
 The workflow follows a standard pattern: GitHub push → CodeBuild triggers → build and test → logs streamed to CloudWatch → artifacts temporarily stored in S3.
 
 ### Source Control & Trigger
-### Build Environment Setup
+### Build Setup
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
@@ -69,6 +69,8 @@ Build artifacts are temporarily stored in S3 for validation purposes. No persist
 
 **Step 6: Cost Management & Cleanup**
 After validating the pipeline, all AWS resources (CodeBuild project, S3 bucket, IAM role) were deleted to ensure zero ongoing cost. This repository preserves the full configuration for reproducibility.
+
+### Artifacts & Output
 
 ## 🚨 Cost Management
 Cost ManagementAll AWS resources (CodeBuild projects, S3 artifacts, IAM roles) were deleted after validation to ensure zero ongoing cost. This repository contains the full configuration to reproduce the pipeline.
