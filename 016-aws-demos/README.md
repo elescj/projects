@@ -5,7 +5,9 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
 ## 📂 Table of Contents
 - [Overview](#-overview)
 - [CI/CD Pipeline & Automated Deployment](#cicd-pipeline-automated-deployment)
-  - [CI/CD Pipeline Walkthrough](#cicd-pipeline-walkthrough)
+  - [Source Control & Trigger]
+  - [Build Environment Setup](#build-environment-setup)
+  - [Build Specification (buildspec.yml)]
 - [Cost Management](#-cost-management)
 - [Summary](#-summary)
 
@@ -35,37 +37,37 @@ Key highlights of this CI/CD pipeline include:
 - Temporary storage of artifacts in S3, ensuring zero persistent cost
 The workflow follows a standard pattern: GitHub push → CodeBuild triggers → build and test → logs streamed to CloudWatch → artifacts temporarily stored in S3.
 
-<a id="cicd-pipeline-walkthrough"></a>
-### 🛠️ CI/CD Pipeline Walkthrough
+### Source Control & Trigger
+### Build Environment Setup
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
 This CI/CD pipeline automatically builds and tests a Python application whenever changes are pushed to GitHub, using AWS CodeBuild for isolated, reproducible builds.
 
-### Step 1: Source Control & Trigger
+**Step 1: Source Control & Trigger**
 The source code is hosted on GitHub. A webhook triggers AWS CodeBuild whenever changes are pushed to the main branch.
 
-### Step 2: Build Environment Setup
+**Step 2: Build Environment Setup**
 AWS CodeBuild provisions an ephemeral Linux build environment using a managed image with Python preinstalled. This ensures consistent builds across runs.
 
-### Step 3: Build Specification (buildspec.yml)
+**Step 3: Build Specification (buildspec.yml)**
 The pipeline behavior is defined in buildspec.yml, which specifies install, build, and test phases. Dependencies are installed, and application tests are executed automatically.
 ([View buildspec.yml](buildspec.yml))
 
-### Step 4: Build Execution & Logs
+**Step 4: Build Execution & Logs**
 During execution, CodeBuild streams logs to CloudWatch, providing visibility into each phase of the pipeline and enabling rapid debugging.
 
-#### Build history
-![Graphical Summary](attachments/builds.png)
+- **Build history**
+  ![Graphical Summary](attachments/builds.png)
 
-#### Build details
-![Graphical Summary](attachments/build1.png)
-![Graphical Summary](attachments/build2.png)
+- **Build details**
+  ![Graphical Summary](attachments/build1.png)
+  ![Graphical Summary](attachments/build2.png)
 
-### Step 5: Artifacts & Output
+**Step 5: Artifacts & Output**
 Build artifacts are temporarily stored in S3 for validation purposes. No persistent storage is retained after pipeline validation.
 
-### Step 6: Cost Management & Cleanup
+**Step 6: Cost Management & Cleanup**
 After validating the pipeline, all AWS resources (CodeBuild project, S3 bucket, IAM role) were deleted to ensure zero ongoing cost. This repository preserves the full configuration for reproducibility.
 
 ## 🚨 Cost Management
