@@ -103,7 +103,8 @@ What this proves:
 - Deployment within a controlled network environment
 - Baseline infrastructure for monitoring
 
-![EC2 Instance Running](attachments/ec2-running.png)
+![EC2 Instance](attachments/ec2.png)
+![EC2 Instance Running](attachments/ec2.png)
 
 ### Custom VPC & Networking Configuration
 
