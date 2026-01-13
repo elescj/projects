@@ -1,5 +1,5 @@
 # ☁️ AWS Demo on Deployment and Cost Management
-
+An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and deployment monitoring with CloudWatch, with an emphasis on cost-aware resource management.
 ![Graphical Summary](attachments/aws-demos.png)
 
 ## 📂 Table of Contents
@@ -9,7 +9,16 @@
 - [Summary](#-summary)
 
 ## 🧠 Overview
-This project demonstrates a set of Python application integrated with an AWS services. The focus is on manage data, maintain server, monitor performance, optimization cost management.
+This project demonstrates an end-to-end AWS deployment workflow, combining CI/CD automation, infrastructure deployment, system monitoring, and cost-aware cloud management.
+
+A Python application is built and tested through a GitHub-triggered AWS CodeBuild pipeline, then deployed to an EC2 instance running inside a custom VPC and subnet. Amazon CloudWatch is used to collect metrics and logs, and alarms are configured to detect threshold breaches. A workload-generating Python script is executed to validate monitoring and alerting behavior. All AWS resources are cleaned up after validation to ensure zero ongoing cost.
+
+Key highlights:
+- Automated CI/CD pipeline using GitHub webhooks and AWS CodeBuild
+- Custom VPC, subnet, routing, and security groups for EC2 deployment
+- CloudWatch metrics, logs, and alarms for observability and alerting
+- Workload generation to validate monitoring and alarm triggers
+- Cost-conscious teardown of all AWS resources after testing
 
 ## 🛠️ CI/CD Pipeline Walkthrough
 
