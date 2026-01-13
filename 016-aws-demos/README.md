@@ -95,7 +95,9 @@ Key points:
 This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
 
 ### EC2 Instance Deployment
+
 ### Custom VPC & Networking Configuration
+
 ### CloudWatch Metrics Collection
 
 ## 💡 Summary
