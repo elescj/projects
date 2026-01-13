@@ -12,7 +12,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [Custom VPC & Networking Configuration](#custom-vpc--networking-configuration)
   - [CloudWatch Metrics Collection](#cloudwatch-metrics-collection)
   - [CloudWatch Logs](#cloudwatch-logs)
-  - [CloudWatch Alarms & Alert Validation]
+  - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
   - [Cost Management & Resource Cleanup]
 - [Summary](#-summary)
 
@@ -141,5 +141,7 @@ What this proves
 - Debugging and observability best practices
 
 ![CloudWatch Logs](attachments/cloudwatch-log.png)
+
+### CloudWatch Alarms & Alert Validation
 
 ## 💡 Summary
