@@ -4,7 +4,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
 
 ## 📂 Table of Contents
 - [Overview](#-overview)
-- [CI/CD Pipeline Walkthrough](#-cicd-pipeline-walkthrough)
+  - [CI/CD Pipeline Walkthrough](#cicd-pipeline-walkthrough)
 - [Cost Management](#-cost-management)
 - [Summary](#-summary)
 
@@ -20,6 +20,7 @@ Key highlights:
 - Workload generation to validate monitoring and alarm triggers
 - Cost-conscious teardown of all AWS resources after testing
 
+<a id="cicd-pipeline-walkthrough"></a>
 ## 🛠️ CI/CD Pipeline Walkthrough
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
