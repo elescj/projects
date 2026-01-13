@@ -38,6 +38,19 @@ Key highlights of this CI/CD pipeline include:
 The workflow follows a standard pattern: GitHub push → CodeBuild triggers → build and test → logs streamed to CloudWatch → artifacts temporarily stored in S3.
 
 ### Source Control & Trigger
+
+The source code for this Python application is hosted in a GitHub repository, which serves as the single source of truth for the project. A GitHub webhook is configured to automatically trigger an AWS CodeBuild project whenever changes are pushed to the main branch. This ensures that every commit is automatically built, tested, and validated without manual intervention.
+
+Key points:
+
+Automatic build triggering via GitHub push events or pull requests
+
+Branch-specific builds: Only changes to the main branch initiate production-style builds
+
+Traceability: Each build is linked to a specific Git commit, providing clear auditability
+
+![GitHub Webhook Trigger](attachments/github-webhook.png)
+
 ### Build Setup
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
