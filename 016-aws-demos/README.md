@@ -96,6 +96,15 @@ This section demonstrates system observability and cost-aware monitoring using A
 
 ### EC2 Instance Deployment
 
+A Python application is deployed to an EC2 instance running inside a custom VPC and subnet. The instance serves as the workload target for monitoring and alert validation.
+
+What this proves:
+- EC2 provisioning and lifecycle management
+- Deployment within a controlled network environment
+- Baseline infrastructure for monitoring
+
+![EC2 Instance Running](attachments/ec2-running.png)
+
 ### Custom VPC & Networking Configuration
 
 ### CloudWatch Metrics Collection
