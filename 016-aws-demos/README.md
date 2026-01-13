@@ -21,7 +21,7 @@ Key highlights:
 - Cost-conscious teardown of all AWS resources after testing
 
 <a id="cicd-pipeline-walkthrough"></a>
-## 🛠️ CI/CD Pipeline Walkthrough
+### 🛠️ CI/CD Pipeline Walkthrough
 
 This project demonstrates a Python application integrated with an AWS CodeBuild CI pipeline. The focus is on build automation, GitHub integration, and cost-aware cloud usage.
 
