@@ -104,9 +104,19 @@ What this proves:
 - Baseline infrastructure for monitoring
 
 ![EC2 Instance](attachments/ec2.png)
-![EC2 Instance Running](attachments/ec2.png)
+![EC2 Instance Running](attachments/ec2-2.png)
 
 ### Custom VPC & Networking Configuration
+
+A dedicated VPC and subnet are created to isolate the EC2 instance. Routing, security groups, and internet access are explicitly configured to support application execution and monitoring.
+
+What this proves
+- VPC, subnet, and routing configuration
+- Security group management
+- Understanding of AWS networking fundamentals
+
+![Custom VPC and Subnet](attachments/vpc.png)
+![Custom VPC and Subnet](attachments/vpc-2.png)
 
 ### CloudWatch Metrics Collection
 
