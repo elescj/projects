@@ -51,8 +51,6 @@ This CI/CD pipeline automatically builds and tests a Python application whenever
 **Step 1: Source Control & Trigger**
 The source code for this Python application is hosted in a GitHub repository, which serves as the single source of truth for the project. A GitHub webhook is configured to automatically trigger an AWS CodeBuild project whenever changes are pushed to the main branch. This ensures that every commit is automatically built, tested, and validated without manual intervention.
 
-![GitHub Webhook Trigger](attachments/github-webhook.png)
-
 **Step 2: Build Environment Setup**
 AWS CodeBuild provisions an ephemeral Linux build environment using a managed image with Python preinstalled. This ensures consistent builds across runs.
 
