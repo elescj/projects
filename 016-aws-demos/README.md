@@ -66,8 +66,9 @@ During execution, CodeBuild streams logs to CloudWatch, providing visibility int
 - **Build history**
   ![Graphical Summary](attachments/builds.png)
 
-- **Build details**
+- **Build #1 details**
   ![Graphical Summary](attachments/build1.png)
+  **Build #2 details**
   ![Graphical Summary](attachments/build2.png)
 
 **Step 5: Artifacts & Output**
