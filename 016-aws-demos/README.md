@@ -113,7 +113,11 @@ Amazon CloudWatch is used to collect EC2 performance metrics, including CPU util
 
 A workload-generating Python script is executed to intentionally increase CPU usage and validate metric collection behavior.
 
-![CloudWatch CPU Metrics](attachments/cloudwatch-metrics.png)
+**CloudWatch Metrics Overview**
+![CloudWatch Metrics Overview](attachments/cloudwatch-metrics.png)
+
+**CloudWatch Metrics Example: CPU Utilization**
+![CloudWatch Metrics Example](attachments/cloudwatch-cpu-utilization.png)
 
 ### CloudWatch Logs
 
