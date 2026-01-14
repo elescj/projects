@@ -144,4 +144,14 @@ What this proves
 
 ### CloudWatch Alarms & Alert Validation
 
+A CloudWatch alarm is configured to monitor CPU utilization and trigger when a defined threshold is exceeded. During workload execution, the alarm transitions to the ALARM state, confirming correct configuration and end-to-end monitoring.
+
+What this proves
+- Threshold-based alerting
+- Alarm lifecycle understanding (OK → ALARM → OK)
+- Monitoring tied to real system behavior
+
+![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm.png)
+![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm-2.png)
+
 ## 💡 Summary
