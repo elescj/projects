@@ -81,8 +81,6 @@ During each successful build, AWS CodeBuild generates build artifacts that repre
 
 The artifacts are used solely for validation and inspection purposes and are not deployed to a long-running production environment. After confirming successful execution, the artifacts and associated storage resources are removed to prevent ongoing costs.
 
-![Build Artifacts in S3](attachments/s3-artifacts.png)
-
 ## 🚨 Cost Management
 This section demonstrates system observability and cost-aware monitoring using Amazon CloudWatch. An EC2 instance is deployed inside a custom VPC, application metrics and logs are collected, and alarms are configured to validate automated alerting behavior under load.
 
