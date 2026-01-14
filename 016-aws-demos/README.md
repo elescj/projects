@@ -82,13 +82,6 @@ During each successful build, AWS CodeBuild generates build artifacts that repre
 
 The artifacts are used solely for validation and inspection purposes and are not deployed to a long-running production environment. After confirming successful execution, the artifacts and associated storage resources are removed to prevent ongoing costs.
 
-Key points:
-
-- Build outputs are generated automatically upon successful pipeline execution
-- Artifacts are stored temporarily in Amazon S3 for validation
-- No persistent artifact storage or long-term deployment is maintained
-- Artifacts are deleted as part of a cost-conscious cleanup strategy
-
 ![Build Artifacts in S3](attachments/s3-artifacts.png)
 
 ## 🚨 Cost Management
