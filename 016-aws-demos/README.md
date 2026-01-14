@@ -123,14 +123,17 @@ A workload-generating Python script is executed to intentionally increase CPU us
 
 Application logs are streamed to CloudWatch Logs, enabling centralized visibility into runtime behavior without directly accessing the EC2 instance.
 
-![CloudWatch Logs](attachments/cloudwatch-log.png)
+**CloudWatch Log**
+![CloudWatch Log](attachments/cloudwatch-log.png)
 
 ### CloudWatch Alarms & Alert Validation
 
 A CloudWatch alarm is configured to monitor CPU utilization and trigger when a defined threshold is exceeded. During workload execution, the alarm transitions to the ALARM state, confirming correct configuration and end-to-end monitoring.
 
-![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm.png)
-![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm-2.png)
+**CloudWatch Alarm**
+![CloudWatch Alarm](attachments/cloudwatch-alarm.png)
+**CloudWatch Alarm Details**
+![CloudWatch Alarm Details](attachments/cloudwatch-alarm-2.png)
 
 ### Cost Management & Resource Cleanup
 
