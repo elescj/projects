@@ -88,15 +88,21 @@ This section demonstrates system observability and cost-aware monitoring using A
 
 A Python application is deployed to an EC2 instance running inside a custom VPC and subnet. The instance serves as the workload target for monitoring and alert validation.
 
+**EC2 Instance**
 ![EC2 Instance](attachments/ec2.png)
+**EC2 Instance Details**
 ![EC2 Instance Running](attachments/ec2-2.png)
 
 ### Custom VPC & Networking Configuration
 
 A dedicated VPC and subnet are created to isolate the EC2 instance. Routing, security groups, and internet access are explicitly configured to support application execution and monitoring.
 
-![Custom VPC and Subnet](attachments/vpc.png)
-![Custom VPC and Subnet](attachments/vpc-2.png)
+**VPC**
+![Custom VPC](attachments/vpc.png)
+**VPC Details**
+![Custom VPC](attachments/vpc-2.png)
+**VPC Subnets**
+![Subnet](attachments/vpc-subnets.png)
 
 ### CloudWatch Metrics Collection
 
