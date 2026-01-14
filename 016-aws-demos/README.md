@@ -13,7 +13,7 @@ An end-to-end AWS demo showcasing CI/CD pipeline automation with CodeBuild and d
   - [CloudWatch Metrics Collection](#cloudwatch-metrics-collection)
   - [CloudWatch Logs](#cloudwatch-logs)
   - [CloudWatch Alarms & Alert Validation](#cloudwatch-alarms--alert-validation)
-  - [Cost Management & Resource Cleanup]
+  - [Cost Management & Resource Cleanup](#cost-management--resource-cleanup)
 - [Summary](#-summary)
 
 ## 🧠 Overview
@@ -98,22 +98,12 @@ This section demonstrates system observability and cost-aware monitoring using A
 
 A Python application is deployed to an EC2 instance running inside a custom VPC and subnet. The instance serves as the workload target for monitoring and alert validation.
 
-What this proves:
-- EC2 provisioning and lifecycle management
-- Deployment within a controlled network environment
-- Baseline infrastructure for monitoring
-
 ![EC2 Instance](attachments/ec2.png)
 ![EC2 Instance Running](attachments/ec2-2.png)
 
 ### Custom VPC & Networking Configuration
 
 A dedicated VPC and subnet are created to isolate the EC2 instance. Routing, security groups, and internet access are explicitly configured to support application execution and monitoring.
-
-What this proves
-- VPC, subnet, and routing configuration
-- Security group management
-- Understanding of AWS networking fundamentals
 
 ![Custom VPC and Subnet](attachments/vpc.png)
 ![Custom VPC and Subnet](attachments/vpc-2.png)
@@ -124,21 +114,11 @@ Amazon CloudWatch is used to collect EC2 performance metrics, including CPU util
 
 A workload-generating Python script is executed to intentionally increase CPU usage and validate metric collection behavior.
 
-What this proves
-- CloudWatch metrics configuration
-- Real-time observability
-- Validation through controlled workload generation
-
 ![CloudWatch CPU Metrics](attachments/cloudwatch-metrics.png)
 
 ### CloudWatch Logs
 
 Application logs are streamed to CloudWatch Logs, enabling centralized visibility into runtime behavior without directly accessing the EC2 instance.
-
-What this proves
-- Log group and log stream configuration
-- Centralized logging for cloud workloads
-- Debugging and observability best practices
 
 ![CloudWatch Logs](attachments/cloudwatch-log.png)
 
@@ -146,12 +126,11 @@ What this proves
 
 A CloudWatch alarm is configured to monitor CPU utilization and trigger when a defined threshold is exceeded. During workload execution, the alarm transitions to the ALARM state, confirming correct configuration and end-to-end monitoring.
 
-What this proves
-- Threshold-based alerting
-- Alarm lifecycle understanding (OK → ALARM → OK)
-- Monitoring tied to real system behavior
-
 ![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm.png)
 ![CloudWatch Alarm Triggered](attachments/cloudwatch-alarm-2.png)
+
+### Cost Management & Resource Cleanup
+
+After validating metrics, logs, and alarms, all AWS resources are deleted, including the EC2 instance, VPC components, CloudWatch alarms, and log groups. This ensures zero ongoing cost while preserving the configuration and documentation for reproducibility.
 
 ## 💡 Summary
