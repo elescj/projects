@@ -107,6 +107,17 @@ A dedicated VPC and subnet are created to isolate the EC2 instance. Routing, sec
 **VPC Subnets**
 ![Subnet](attachments/vpc-subnets.png)
 
+VPC Internet gateway and security groups are demonstrate as well.
+
+**Internet Gateway**
+![Internet Gateway](attachments/vpc-internet-gateway.png)
+
+**Internet Gateway Details**
+![Internet Gateway Details](attachments/vpc-internet-gateway-2.png)
+
+**Security Groups**
+![Security Groups](attachments/vpc-security-groups.png)
+
 ### CloudWatch Metrics Collection
 
 Amazon CloudWatch is used to collect EC2 performance metrics, including CPU utilization. Metrics are visualized in near real time while the application workload is running.
