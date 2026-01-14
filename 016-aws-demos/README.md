@@ -134,3 +134,5 @@ A CloudWatch alarm is configured to monitor CPU utilization and trigger when a d
 After validating metrics, logs, and alarms, all AWS resources are deleted, including the EC2 instance, VPC components, CloudWatch alarms, and log groups. This ensures zero ongoing cost while preserving the configuration and documentation for reproducibility.
 
 ## 💡 Summary
+
+This project demonstrates an end-to-end AWS workflow combining CI/CD automation, infrastructure deployment, system monitoring, and cost-conscious cloud management. A Python application is built and tested through a GitHub-triggered AWS CodeBuild pipeline, deployed to an EC2 instance within a custom VPC, and monitored using Amazon CloudWatch metrics, logs, and alarms. Controlled workload generation is used to validate observability and alerting behavior. All resources are cleaned up after validation to ensure zero ongoing cost, reflecting production-minded cloud engineering practices.
