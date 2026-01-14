@@ -90,6 +90,7 @@ A Python application is deployed to an EC2 instance running inside a custom VPC 
 
 **EC2 Instance**
 ![EC2 Instance](attachments/ec2.png)
+
 **EC2 Instance Details**
 ![EC2 Instance Running](attachments/ec2-2.png)
 
@@ -99,8 +100,10 @@ A dedicated VPC and subnet are created to isolate the EC2 instance. Routing, sec
 
 **VPC**
 ![Custom VPC](attachments/vpc.png)
+
 **VPC Details**
 ![Custom VPC](attachments/vpc-2.png)
+
 **VPC Subnets**
 ![Subnet](attachments/vpc-subnets.png)
 
